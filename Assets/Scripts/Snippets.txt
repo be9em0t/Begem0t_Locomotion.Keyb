@@ -1,0 +1,23 @@
+=======Tips:=========================
+when Animator doesn not show previe bars - toggle Script Component to awaken it
+
+
+=====================
+if (Input.GetKeyDown("up"))				//single
+	print("up arrow key is held down");
+
+if (Input.GetKey("down"))				//continuous
+	print("down arrow key is held down");
+
+
+======================
+if (Sprint==true)
+	Debug.Log ("run");
+else
+	Debug.Log("walk");
+
+========================
+anim.SetBool("Jump", true);					//Turn on boolean
+
+========================
+animation.CrossFadeQueued("Idle", 0.3f, QueueMode.PlayNow); //this is not compatible with mecanim
