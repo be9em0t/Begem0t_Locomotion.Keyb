@@ -23,7 +23,7 @@ public class b9CameraControl : MonoBehaviour {
 	void Start () {
         //Create camera hierarchy
         cameraParent = new GameObject("cameraParent");              //create camera's parent object at 0,0,0
-        camOffset = new Vector3(0f, camHeight, camDist);                   //define the camera offset
+        camOffset = new Vector3(0f, camHeight, camDist);            //define the camera offset
         transform.position = camOffset;                             //reposition camera relative to 0,0,0
         transform.parent = cameraParent.transform;                  //parent camera to cameraParent, so that it follows avatar
 

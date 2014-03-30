@@ -53,7 +53,12 @@ public class b9Mecanim05 : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-        
+        if (Input.GetKey("escape"))
+        {
+            Debug.Log("quitme!");
+            Application.Quit();
+        }
+
             anim.speed = animSpeed;                         // Set the global speed of our animator
             animState = anim.GetCurrentAnimatorStateInfo(0);// Get our animator's current state
 
