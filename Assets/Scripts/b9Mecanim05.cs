@@ -157,7 +157,7 @@ public class b9Mecanim05 : MonoBehaviour
                 NextIdleVariant = UnityEngine.Random.Range(0, IdleAnims.Length);  //random select next transition
                 canChangeState = false;                             //stop state change until next crossfade
                 CurrentIdleVariant = NextIdleVariant;               //start selection of next random clip
-                anim.CrossFade(IdleAnims[NextIdleVariant], .1f, -1, 0f);    //Crossfade to
+                anim.CrossFade(IdleAnims[NextIdleVariant], .3f, -1, float.NegativeInfinity);    //Crossfade to
             }
             else if (animPercent < .3f && canChangeState == false)  //arm for a new crossfade
             {
