@@ -1,0 +1,864 @@
+fileFormatVersion: 2
+guid: 8eedcb1769c224c47ab42a991055abc1
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Head
+    100002: Hips
+    100004: LeftArm
+    100006: LeftFoot
+    100008: LeftForeArm
+    100010: LeftHand
+    100012: LeftLeg
+    100014: LeftShoulder
+    100016: LeftToeBase
+    100018: LeftUpLeg
+    100020: Neck
+    100022: Reference
+    100024: RightArm
+    100026: RightFoot
+    100028: RightForeArm
+    100030: RightHand
+    100032: RightLeg
+    100034: RightShoulder
+    100036: RightToeBase
+    100038: RightUpLeg
+    100040: Spine
+    100042: Spine1
+    100044: Spine2
+    100046: Spine3
+    100048: //RootNode
+    400000: Head
+    400002: Hips
+    400004: LeftArm
+    400006: LeftFoot
+    400008: LeftForeArm
+    400010: LeftHand
+    400012: LeftLeg
+    400014: LeftShoulder
+    400016: LeftToeBase
+    400018: LeftUpLeg
+    400020: Neck
+    400022: Reference
+    400024: RightArm
+    400026: RightFoot
+    400028: RightForeArm
+    400030: RightHand
+    400032: RightLeg
+    400034: RightShoulder
+    400036: RightToeBase
+    400038: RightUpLeg
+    400040: Spine
+    400042: Spine1
+    400044: Spine2
+    400046: Spine3
+    400048: //RootNode
+    7400000: Walk_Ahead
+    7400002: Walk-2-Stand
+    7400004: Stand-2-Walk
+    7400006: Walk_Turn Tight
+    7400008: Walk_Turn Medium
+    7400010: Walk_Turn Wide
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk_Ahead
+      takeName: Walk_Aheads
+      firstFrame: 141
+      lastFrame: 177.100006
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: .519999981
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Reference
+        weight: 1
+      - path: Reference/Hips
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Reference/Hips/RightUpLeg
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: Reference/Hips/Spine
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk-2-Stand
+      takeName: Walk_Aheads
+      firstFrame: 195
+      lastFrame: 225
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Reference
+        weight: 1
+      - path: Reference/Hips
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Reference/Hips/RightUpLeg
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: Reference/Hips/Spine
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Stand-2-Walk
+      takeName: Walk_Aheads
+      firstFrame: 70
+      lastFrame: 123
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Reference
+        weight: 1
+      - path: Reference/Hips
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Reference/Hips/RightUpLeg
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: Reference/Hips/Spine
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk_Turn Tight
+      takeName: Walk_Aheads
+      firstFrame: 334
+      lastFrame: 372
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: .479999989
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Reference
+        weight: 1
+      - path: Reference/Hips
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Reference/Hips/RightUpLeg
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: Reference/Hips/Spine
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk_Turn Medium
+      takeName: Walk_Aheads
+      firstFrame: 444
+      lastFrame: 477.799988
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Reference
+        weight: 1
+      - path: Reference/Hips
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Reference/Hips/RightUpLeg
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: Reference/Hips/Spine
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk_Turn Wide
+      takeName: Walk_Aheads
+      firstFrame: 546
+      lastFrame: 580
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: .504999995
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Reference
+        weight: 1
+      - path: Reference/Hips
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Reference/Hips/RightUpLeg
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: Reference/Hips/Spine
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Reference/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Walk_Aheads v09a fk(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Reference
+      position: {x: .996762693, y: .936885834, z: 4.11546755}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hips
+      position: {x: -.996762574, y: .0146232843, z: -4.11546755}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LeftUpLeg
+      position: {x: -.0834533796, y: -.000119552613, z: -1.22043193e-05}
+      rotation: {x: -4.65595758e-06, y: 7.05991092e-13, z: 2.21826113e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LeftLeg
+      position: {x: 9.31610167e-09, y: -.434893072, z: 1.17500904e-05}
+      rotation: {x: 9.69973735e-06, y: -5.04162196e-13, z: -1.16173195e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LeftFoot
+      position: {x: 1.92951131e-08, y: -.424946457, z: 1.95595821e-05}
+      rotation: {x: -5.04377977e-06, y: -4.16989143e-13, z: -2.21814513e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LeftToeBase
+      position: {x: -1.90734859e-08, y: -.0638387725, z: .143720269}
+      rotation: {x: -1.53302052e-42, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightUpLeg
+      position: {x: .0834531635, y: -.000119552613, z: -1.21992171e-05}
+      rotation: {x: -4.79650134e-06, y: -1.58146603e-11, z: -5.04653542e-07, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightLeg
+      position: {x: 8.1087336e-07, y: -.434892833, z: 1.15458324e-05}
+      rotation: {x: 9.69973553e-06, y: -3.02994977e-12, z: -1.13705985e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightFoot
+      position: {x: -9.78603243e-09, y: -.424948156, z: 1.95171197e-05}
+      rotation: {x: -4.90323373e-06, y: 2.37396196e-11, z: 5.04654679e-07, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightToeBase
+      position: {x: -9.53674295e-09, y: -.0638389364, z: .14372012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine
+      position: {x: 1.19485777e-09, y: .103000179, z: 2.43135164e-05}
+      rotation: {x: -1.8739696e-33, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine1
+      position: {x: 4.72482498e-10, y: .11384964, z: -4.43253703e-05}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine2
+      position: {x: 1.2881719e-09, y: .10287109, z: -1.9418076e-09}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine3
+      position: {x: -7.19519444e-10, y: .102871016, z: 6.20493656e-09}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LeftShoulder
+      position: {x: -.031369146, y: .0807543918, z: -6.82193768e-09}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LeftArm
+      position: {x: -.14554885, y: 1.52587887e-07, z: 5.58793532e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LeftForeArm
+      position: {x: -.311410934, y: -1.52587887e-07, z: 6.86803787e-08}
+      rotation: {x: -1.54116641e-20, y: 2.71537573e-07, z: 2.41832352e-13, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LeftHand
+      position: {x: -.254638374, y: 1.52587972e-07, z: -8.21283521e-08}
+      rotation: {x: 1.20370622e-35, y: 0, z: 2.13314662e-29, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Neck
+      position: {x: 1.40130032e-08, y: .144778892, z: -6.87083235e-09}
+      rotation: {x: -1.87263432e-33, y: 3.0814882e-32, z: 3.0814882e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Head
+      position: {x: -8.6413996e-09, y: .0957340971, z: -.000105045583}
+      rotation: {x: -0, y: -2.46519033e-32, z: -2.46519033e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightShoulder
+      position: {x: .0313691646, y: .0807543918, z: -1.1906959e-08}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightArm
+      position: {x: .145548478, y: 1.52587887e-07, z: 1.30617983e-09}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightForeArm
+      position: {x: .311411023, y: 0, z: -1.23819337e-08}
+      rotation: {x: -1.72472893e-21, y: -1.51214493e-07, z: -5.23907598e-14, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightHand
+      position: {x: .254638165, y: 1.52587901e-07, z: -8.71334365e-08}
+      rotation: {x: 7.52316385e-37, y: 0, z: 6.28503427e-30, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
