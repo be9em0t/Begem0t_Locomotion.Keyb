@@ -46,18 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AnimTriggers.cs" />
-     <Compile Include="Assets\Scripts\FinishedLightLerp.cs" />
-     <Compile Include="Assets\Scripts\SmoothFollow.cs" />
-     <Compile Include="Assets\Scripts\b9Camera2.cs" />
-     <Compile Include="Assets\Scripts\b9CameraConstant.cs" />
-     <Compile Include="Assets\Scripts\b9CameraControl.cs" />
-     <Compile Include="Assets\Scripts\b9CameraTail.cs" />
-     <Compile Include="Assets\Scripts\b9CameraTrailing.cs" />
-     <Compile Include="Assets\Scripts\b9Mecanim04.cs" />
-     <Compile Include="Assets\Scripts\b9Mecanim05.cs" />
-     <Compile Include="Assets\Scripts\b9OnScreen.cs" />
-     <None Include="Assets\Scripts\Snippets.txt" />
+     <Compile Include="Assets\Demo Project\Scripts\AnimTriggers.cs" />
+     <Compile Include="Assets\Demo Project\Scripts\b9CameraControl.cs" />
+     <Compile Include="Assets\Demo Project\Scripts\b9CameraTrailing.cs" />
+     <Compile Include="Assets\Demo Project\Scripts\b9Mecanim.cs" />
+     <Compile Include="Assets\Demo Project\Scripts\b9OnScreen.cs" />
+     <None Include="Assets\MocapiAnimation\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
