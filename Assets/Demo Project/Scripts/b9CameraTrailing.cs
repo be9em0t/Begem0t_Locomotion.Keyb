@@ -25,7 +25,7 @@ public class b9CameraTrailing : MonoBehaviour {
         //define target object
         if (targetTransf == null)   //if no target defined
         {
-            Debug.Log("Error: no camera target assigned. Assuming Default Avatar.");
+            Debug.Log("Warning: no camera target assigned. Assuming Default Avatar.");
             targetTransf = GameObject.Find("DefaultAvatar").transform;                  //get target avatar's transform
         }
 
