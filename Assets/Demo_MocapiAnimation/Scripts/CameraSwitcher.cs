@@ -1,0 +1,51 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class CameraSwitcher : MonoBehaviour {
+    
+    public static Camera camActive;
+
+	// Use this for initialization
+	void Start () {
+        Camera[] allCams = FindObjectsOfType(typeof(Camera)) as Camera[];
+        allCams[0].enabled = true;
+        camActive = allCams[0];
+    }
+	
+	// Update is called once per frame
+	void Update () {
+
+	if (Input.GetKeyDown(KeyCode.C))
+    {
+        CamSwitch();
+    }
+
+    }
+
+    void CamSwitch()
+    {
+        Camera[] allCams = FindObjectsOfType(typeof(Camera)) as Camera[];
+
+        for (int i = 0; i < allCams.Length; i++)
+        {
+            if (allCams[i].enabled == true)
+            {
+                allCams[i].enabled = false;
+                if (i == allCams.Length - 1)
+                {
+                    allCams[0].enabled = true;
+                    camActive = allCams[0];
+                    //Debug.Log("Switched to camera " + allCams[0].name);
+                }
+                else
+                {
+                    allCams[i + 1].enabled = true;
+                    camActive = allCams[i+1];
+                    //Debug.Log("Switched to camera " + allCams[i + 1].name);
+                }
+                break;
+            }
+
+        }
+    }
+}
