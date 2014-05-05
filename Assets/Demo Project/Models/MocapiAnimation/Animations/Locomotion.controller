@@ -93,7 +93,7 @@ AnimatorController:
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
     m_StateMachineMotionSetIndex: 0
-    m_DefaultWeight: 0
+    m_DefaultWeight: 1
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
@@ -4629,42 +4629,16 @@ StateMachine:
   - {fileID: 110753097}
   - {fileID: 110719649}
   m_ChildStateMachinePosition:
-  - {x: 60, y: -96, z: 0}
-  - {x: -192, y: -96, z: 0}
+  - {x: 60, y: -108, z: 0}
+  - {x: -264, y: -108, z: 0}
   - {x: -276, y: 36, z: 0}
-  - {x: 312, y: -96, z: 0}
+  - {x: 348, y: -96, z: 0}
   - {x: 60, y: 36, z: 0}
-  - {x: -240, y: 180, z: 0}
+  - {x: -264, y: 180, z: 0}
   - {x: 348, y: 180, z: 0}
   - {x: 60, y: 180, z: 0}
   - {x: 50, y: 50, z: 0}
   m_OrderedTransitions:
-    data:
-      first: {fileID: 110201369}
-      second:
-      - {fileID: 110144879}
-      - {fileID: 110169963}
-      - {fileID: 110148691}
-    data:
-      first: {fileID: 110233855}
-      second:
-      - {fileID: 110171468}
-    data:
-      first: {fileID: 110285740}
-      second:
-      - {fileID: 110189927}
-    data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
     data:
       first: {fileID: 0}
       second: []
@@ -4682,17 +4656,11 @@ StateMachine:
       - {fileID: 110102924}
       - {fileID: 110166668}
     data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
+      first: {fileID: 110201369}
+      second:
+      - {fileID: 110144879}
+      - {fileID: 110169963}
+      - {fileID: 110148691}
     data:
       first: {fileID: 110202307}
       second:
@@ -4715,15 +4683,13 @@ StateMachine:
       second:
       - {fileID: 110110985}
     data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
-    data:
       first: {fileID: 110233382}
       second:
       - {fileID: 110109227}
+    data:
+      first: {fileID: 110233855}
+      second:
+      - {fileID: 110171468}
     data:
       first: {fileID: 110234886}
       second:
@@ -4738,23 +4704,14 @@ StateMachine:
       second:
       - {fileID: 110117138}
     data:
-      first: {fileID: 0}
-      second: []
-    data:
       first: {fileID: 110238799}
       second:
       - {fileID: 110152283}
       - {fileID: 110140448}
     data:
-      first: {fileID: 0}
-      second: []
-    data:
       first: {fileID: 110242987}
       second:
       - {fileID: 110120249}
-    data:
-      first: {fileID: 0}
-      second: []
     data:
       first: {fileID: 110248116}
       second:
@@ -4782,9 +4739,6 @@ StateMachine:
       second:
       - {fileID: 110121023}
     data:
-      first: {fileID: 0}
-      second: []
-    data:
       first: {fileID: 110255888}
       second:
       - {fileID: 110149539}
@@ -4809,9 +4763,6 @@ StateMachine:
       second:
       - {fileID: 110127388}
       - {fileID: 110151224}
-    data:
-      first: {fileID: 0}
-      second: []
     data:
       first: {fileID: 110270486}
       second:
@@ -4856,12 +4807,13 @@ StateMachine:
       second:
       - {fileID: 110135753}
     data:
+      first: {fileID: 110285740}
+      second:
+      - {fileID: 110189927}
+    data:
       first: {fileID: 110298051}
       second:
       - {fileID: 110148891}
-    data:
-      first: {fileID: 0}
-      second: []
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 84, y: -144, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

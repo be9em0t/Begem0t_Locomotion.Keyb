@@ -4,7 +4,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class b9OnScreen : MonoBehaviour {
+public class OnScreen : MonoBehaviour {
 
     public float hSliderValue = 0.0F;
 
@@ -13,7 +13,7 @@ public class b9OnScreen : MonoBehaviour {
 
     void Start() 
     {
-        hSliderValue = b9Mecanim.animSpeed; 
+        hSliderValue = MocapiMecanim.animSpeed; 
     }
 
 	void OnGUI () {
@@ -82,7 +82,7 @@ public class b9OnScreen : MonoBehaviour {
 
         hSliderValue = GUI.HorizontalSlider(new Rect(Screen.width - 110, 10, 100, 30), hSliderValue, 0.0F, 5.0F);  //anim speed slider
         hSliderValue = Mathf.Round((hSliderValue * 10f)) / 10f;     //round to DP1
-        b9Mecanim.animSpeed = hSliderValue;                       
+        MocapiMecanim.animSpeed = hSliderValue;                       
         GUI.Label(new Rect(Screen.width - 110, 70, 100, 30), "Anim Speed:" + hSliderValue.ToString(), mainStyle);
 
 //		GUI.Label(new Rect(10,130, 160,120), "Z/X: Zoom camera");

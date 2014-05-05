@@ -873,7 +873,7 @@ Camera:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 638927422}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
@@ -1530,12 +1530,11 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1379258533}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c822171d2b354a64d977c08a836b35bd, type: 3}
+  m_Script: {fileID: 11500000, guid: d9dd6ea14af34904985ed91959a9a405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetCamTransf: {fileID: 1320681690}
   cameraParent: {fileID: 0}
 --- !u!81 &1379258535
 AudioListener:
@@ -1564,7 +1563,7 @@ Camera:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1379258533}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
@@ -1604,7 +1603,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1379258533}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04bf41831219b244a895c872818aee9f, type: 3}
   m_Name: 
@@ -2239,7 +2238,7 @@ SkinnedMeshRenderer:
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: d765549d71c24bf45a12e472bef7754e, type: 2}
-  - {fileID: 2100000, guid: a7ef1b31b6452a6498a3ec0d703c7be9, type: 2}
+  - {fileID: 2100000, guid: f61e48ddc9e299a4dab133b1a941e60b, type: 2}
   - {fileID: 2100000, guid: aefc7606bc9795c4ab261688e49fefc3, type: 2}
   - {fileID: 2100000, guid: d60d9d15584f1f949b0387b030d65d5d, type: 2}
   m_SubsetIndices: 

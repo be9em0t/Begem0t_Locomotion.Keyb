@@ -3,7 +3,7 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 
-public class b9Mecanim : MonoBehaviour
+public class MocapiMecanim : MonoBehaviour
 {
     private Animator anim;
     private AnimatorStateInfo animState;
@@ -14,11 +14,11 @@ public class b9Mecanim : MonoBehaviour
     int CurrentIdleVariant = 1;
     int NextIdleVariant = 1;
 
-    float moveForeBack = 0f;            //keyb walk speed
-    float moveLeftRight = 0f;           //keyb strafing speed
+    float moveForeBack;            //keyb walk speed
+    float moveLeftRight;           //keyb strafing speed
 
-    float lookLeftRight = 0f;           //keyb running speed
-    float lookUpDown = 0f;              //keyb turning speed
+    float lookLeftRight;           //keyb running speed
+    float lookUpDown;              //keyb turning speed
 
     float allAxis = 0f;                 //sum of all joystick axis inputs
 
@@ -33,9 +33,9 @@ public class b9Mecanim : MonoBehaviour
     bool button8 = false;
     bool button9 = false;
 
-            //static int idleState = Animator.StringToHash("Base Layer.Stand_Idle");
+    //static int idleState = Animator.StringToHash("Base Layer.Stand_Idle");
     //static int idleState = Animator.StringToHash("STAND_IDLES.Idle01");
-    static int run2stand = Animator.StringToHash("MOVE_AHEAD.Walk-2-Stand");
+    //static int run2stand = Animator.StringToHash("MOVE_AHEAD.Walk-2-Stand");
 
     static int idle00 = Animator.StringToHash("STAND_IDLES.Idle00"); //default idle
     static int idle01 = Animator.StringToHash("STAND_IDLES.Idle01");

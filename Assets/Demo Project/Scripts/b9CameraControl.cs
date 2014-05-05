@@ -11,7 +11,6 @@ public class b9CameraControl : MonoBehaviour {
 	float vertOffset = -1f;          //camera vertial offset
     float cameraZoom = 60f;         //camera FieldOfView
 
-    public Transform targetCamTransf;         //target camera's transform
 	Transform avatarTransf;         //target avatar's transform
     //Transform avatarLookAt;         //target avatar's hips
 
@@ -22,22 +21,13 @@ public class b9CameraControl : MonoBehaviour {
     public GameObject cameraParent;     //camera's parent object
 
 	void Start () {
-        //define target object
-        if (targetCamTransf == null)   //if no target defined
-        {
-            Debug.Log("Warning: no camera target assigned. Assuming Default Avatar.");
-            targetCamTransf = GameObject.Find("DefaultAvatar").transform;                  //get target avatar's transform
-        }
-
         //Create camera hierarchy
         cameraParent = new GameObject("cameraParent");              //create camera's parent object at 0,0,0
         camOffset = new Vector3(0f, camHeight, camDist);            //define the camera offset
         transform.position = camOffset;                             //reposition camera relative to 0,0,0
         transform.parent = cameraParent.transform;                  //parent camera to cameraParent, so that it follows avatar
 
-
-        //Old
-        //avatarTransf = GameObject.Find("DefaultAvatar").transform;  //get target avatar's transform
+        avatarTransf = GameObject.Find("MocapiMan").transform;  //get target avatar's transform
 
     }
 	

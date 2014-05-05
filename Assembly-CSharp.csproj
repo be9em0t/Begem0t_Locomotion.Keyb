@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Demo Project\Scripts\AnimTriggers.cs" />
+     <Compile Include="Assets\Demo Project\Scripts\MocapiCameraTrailing.cs" />
+     <Compile Include="Assets\Demo Project\Scripts\MocapiMecanim.cs" />
+     <Compile Include="Assets\Demo Project\Scripts\OnScreen.cs" />
      <Compile Include="Assets\Demo Project\Scripts\b9CameraControl.cs" />
-     <Compile Include="Assets\Demo Project\Scripts\b9CameraTrailing.cs" />
-     <Compile Include="Assets\Demo Project\Scripts\b9Mecanim.cs" />
-     <Compile Include="Assets\Demo Project\Scripts\b9OnScreen.cs" />
-     <None Include="Assets\MocapiAnimation\ReadMe.txt" />
+     <None Include="Assets\Demo Project\Models\MocapiAnimation\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
