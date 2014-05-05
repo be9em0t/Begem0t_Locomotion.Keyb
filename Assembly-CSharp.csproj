@@ -47,9 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Demo Project\Scripts\AnimTriggers.cs" />
+     <Compile Include="Assets\Demo Project\Scripts\CameraSwitcher.cs" />
      <Compile Include="Assets\Demo Project\Scripts\MocapiCameraTrailing.cs" />
      <Compile Include="Assets\Demo Project\Scripts\MocapiMecanim.cs" />
      <Compile Include="Assets\Demo Project\Scripts\OnScreen.cs" />
+     <Compile Include="Assets\Demo Project\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\Demo Project\Scripts\b9CameraControl.cs" />
      <None Include="Assets\Demo Project\Models\MocapiAnimation\ReadMe.txt" />
   </ItemGroup>
