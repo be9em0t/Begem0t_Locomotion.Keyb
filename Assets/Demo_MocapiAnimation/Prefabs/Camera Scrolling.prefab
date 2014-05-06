@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 20: {fileID: 2000000}
-  - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: Camera Scrolling
   m_TagString: Untagged
@@ -66,10 +66,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9dd6ea14af34904985ed91959a9a405, type: 3}
+  m_Script: {fileID: 11500000, guid: 04bf41831219b244a895c872818aee9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraParent: {fileID: 0}
+  hSliderValue: 0
+  guiTextColor: {r: 0, g: 0, b: 0, a: 0}
+  guiTitleColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -78,12 +80,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04bf41831219b244a895c872818aee9f, type: 3}
+  m_Script: {fileID: 11500000, guid: 36d04e2c8dd83af4a96b38c4b8943683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hSliderValue: 0
-  guiTextColor: {r: 0, g: 0, b: 0, a: 0}
-  guiTitleColor: {r: 0, g: 0, b: 0, a: 0}
+  smooth: 3
+  camZoom: 60
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -9,13 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 20: {fileID: 2000000}
-  - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
-  - 81: {fileID: 8100000}
-  - 92: {fileID: 9200000}
-  - 124: {fileID: 12400000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Camera Tracking
+  m_Name: Camera Trailing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.79999995, z: -2.20000005}
+  m_LocalRotation: {x: .173648193, y: 0, z: 0, w: .984807789}
+  m_LocalPosition: {x: 0, y: 1.79999995, z: -2.79999995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -38,7 +35,7 @@ Camera:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
@@ -61,42 +58,7 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
   m_OcclusionCulling: 1
---- !u!81 &8100000
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 0
---- !u!92 &9200000
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 0
 --- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceca998792cb4ce469d9a86b5609ee07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dampPosition: 2
-  dampRotation: .5
-  verticalComponent: 0
-  camDist: 2.20000005
-  camHeight: .800000012
-  rotAround: 0
-  rotDown: 20
-  camVertOffset: 0
-  camZoom: 60
-  targetTransf: {fileID: 0}
---- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -110,13 +72,19 @@ MonoBehaviour:
   hSliderValue: 0
   guiTextColor: {r: 0, g: 0, b: 0, a: 0}
   guiTitleColor: {r: 0, g: 0, b: 0, a: 0}
---- !u!124 &12400000
-Behaviour:
-  m_ObjectHideFlags: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a6795207273fa84bbc3e80623365671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smooth: 3
+  camZoom: 60
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
