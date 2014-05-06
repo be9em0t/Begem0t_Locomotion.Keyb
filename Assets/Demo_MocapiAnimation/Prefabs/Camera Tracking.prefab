@@ -9,13 +9,13 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 20: {fileID: 2000000}
-  - 124: {fileID: 12400000}
-  - 92: {fileID: 9200000}
-  - 81: {fileID: 8100000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
+  - 81: {fileID: 8100000}
+  - 92: {fileID: 9200000}
+  - 124: {fileID: 12400000}
   m_Layer: 0
-  m_Name: CameraStatic
+  m_Name: Camera Tracking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0478601456, y: .842786789, z: -1.71651936}
+  m_LocalPosition: {x: 0, y: 1.79999995, z: -2.20000005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63,18 +63,18 @@ Camera:
   m_OcclusionCulling: 1
 --- !u!81 &8100000
 AudioListener:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Enabled: 0
 --- !u!92 &9200000
 Behaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -83,10 +83,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ab58738c76035e4fbed12884e20d4cc, type: 3}
+  m_Script: {fileID: 11500000, guid: ceca998792cb4ce469d9a86b5609ee07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smooth: 3
+  dampPosition: 2
+  dampRotation: .5
+  verticalComponent: 0
+  camDist: 2.20000005
+  camHeight: .800000012
+  rotAround: 0
+  rotDown: 20
+  camVertOffset: 0
+  camZoom: 60
+  targetTransf: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,11 +112,11 @@ MonoBehaviour:
   guiTitleColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!124 &12400000
 Behaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

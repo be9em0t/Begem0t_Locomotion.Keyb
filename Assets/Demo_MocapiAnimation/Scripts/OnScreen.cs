@@ -49,7 +49,7 @@ public class OnScreen : MonoBehaviour {
 //		GUI.Label(new Rect(10,45, 100,20), "Speed:    "+s);		
 //		GUI.Label(new Rect(10,55, 100,40), "Direction:"+d);
 
-        GUI.Label(new Rect(10, 20, 200, 120), "Current camera: " + CameraSwitcher.camActive.name , smallStyle);
+        GUI.Label(new Rect(10, 20, 200, 120), MocapiCameraSwitcher.camActive.name , smallStyle);
         GUI.Label(new Rect(10, 40, 200, 120), "Camera Left/Right : < >", mainStyle);
         GUI.Label(new Rect(10, 60, 200, 120), "Camera Up/Down : \" ?", mainStyle);
         GUI.Label(new Rect(10, 80, 200, 120), "Camera Zoom : PgUp PgDn", mainStyle);

@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class MocapiCameraTrailing : MonoBehaviour {
+public class MocapiCameraTracking : MonoBehaviour {
 
     public float dampPosition = 2f;
     public float dampRotation = .5f;

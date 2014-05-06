@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CameraSwitcher : MonoBehaviour {
+public class MocapiCameraSwitcher : MonoBehaviour {
     
     public static Camera camActive;
 

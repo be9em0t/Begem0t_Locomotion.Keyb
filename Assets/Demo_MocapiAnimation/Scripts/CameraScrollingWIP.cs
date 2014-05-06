@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class b9CameraControl : MonoBehaviour {
+public class CameraScrollingWIP : MonoBehaviour {
 
     float DampCamera = 2f;	        //Adjust smoothing of camera motion: 0 - infinity, 10 almost instant, default 2
 	float camDist = -2.5f;          //Initial Camera distance
@@ -35,7 +35,7 @@ public class b9CameraControl : MonoBehaviour {
         //follow Avatar with Camera 
         targetPos= new Vector3(avatarTransf.position.x, avatarTransf.position.y-vertOffset, avatarTransf.position.z);
         cameraParent.transform.position = Vector3.Lerp(cameraParent.transform.position, targetPos, DampCamera * Time.deltaTime);
-        cameraParent.transform.rotation = Quaternion.Slerp(cameraParent.transform.rotation, avatarTransf.rotation * Quaternion.Euler(0f, rotAround, 0f), DampCamera * Time.deltaTime); 
+        //cameraParent.transform.rotation = Quaternion.Slerp(cameraParent.transform.rotation, avatarTransf.rotation * Quaternion.Euler(0f, rotAround, 0f), DampCamera * Time.deltaTime); 
 
         //zoom Camera in and out
         camera.fieldOfView = cameraZoom;

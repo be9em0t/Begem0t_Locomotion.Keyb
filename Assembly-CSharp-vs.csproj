@@ -47,12 +47,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Demo_MocapiAnimation\Scripts\AnimTriggers.cs" />
-     <Compile Include="Assets\Demo_MocapiAnimation\Scripts\CameraSwitcher.cs" />
-     <Compile Include="Assets\Demo_MocapiAnimation\Scripts\MocapiCameraTrailing.cs" />
+     <Compile Include="Assets\Demo_MocapiAnimation\Scripts\CameraScrollingWIP.cs" />
+     <Compile Include="Assets\Demo_MocapiAnimation\Scripts\CameraThirdPersonWIP.cs" />
+     <Compile Include="Assets\Demo_MocapiAnimation\Scripts\MocapiCameraSwitcher.cs" />
+     <Compile Include="Assets\Demo_MocapiAnimation\Scripts\MocapiCameraTracking.cs" />
      <Compile Include="Assets\Demo_MocapiAnimation\Scripts\MocapiMecanim.cs" />
      <Compile Include="Assets\Demo_MocapiAnimation\Scripts\OnScreen.cs" />
-     <Compile Include="Assets\Demo_MocapiAnimation\Scripts\ThirdPersonCamera.cs" />
-     <Compile Include="Assets\Demo_MocapiAnimation\Scripts\b9CameraControl.cs" />
      <None Include="Assets\ReadMe_MocapiAnimaton.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
