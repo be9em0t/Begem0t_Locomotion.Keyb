@@ -22,11 +22,14 @@ public class MocapiCameraTracking : MonoBehaviour {
     Vector3 wantedParentPosition;              //target offset
 
 	void Start () {
+
         //define target object
         if (targetTransf == null)   //if no target defined
         {
-            Debug.Log("Warning: no camera target assigned. Assuming Default Avatar.");
-            targetTransf = GameObject.Find("DefaultAvatar").transform;                  //get target avatar's transform
+            //Debug.Log("Warning: no camera target assigned. Assuming Default Avatar.");
+            //targetTransf = GameObject.Find("DefaultAvatar").transform;                  //get target avatar's transform
+            targetTransf = GameObject.Find("Hips").transform;                  //get first avatar's transform
+
         }
 
         //Create camera rig

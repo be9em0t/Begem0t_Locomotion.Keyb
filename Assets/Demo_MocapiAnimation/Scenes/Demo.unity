@@ -1264,7 +1264,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 39ce528b833b3824d9afea5317d7582d, type: 2}
       propertyPath: targetTransf
       value: 
-      objectReference: {fileID: 1320681690}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 39ce528b833b3824d9afea5317d7582d, type: 2}
   m_RootGameObject: {fileID: 2016482898}
@@ -1745,9 +1745,9 @@ Transform:
   m_LocalPosition: {x: .0713144541, y: -1.60886613e-20, z: .00724568916}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1096397551}
   - {fileID: 2110123577}
   - {fileID: 30921020}
+  - {fileID: 1096397551}
   m_Father: {fileID: 0}
 --- !u!54 &1320681691
 Rigidbody:
@@ -2381,7 +2381,7 @@ MonoBehaviour:
   rotDown: 20
   camVertOffset: 0
   camZoom: 60
-  targetTransf: {fileID: 1320681690}
+  targetTransf: {fileID: 0}
 --- !u!20 &2016482901
 Camera:
   m_ObjectHideFlags: 0
