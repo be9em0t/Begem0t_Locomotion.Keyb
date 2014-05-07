@@ -52,6 +52,7 @@
      <Compile Include="Assets\Demo_MocapiAnimation\Scripts\Camera\MocapiCameraTrailing.cs" />
      <Compile Include="Assets\Demo_MocapiAnimation\Scripts\Camera\OnScreen.cs" />
      <Compile Include="Assets\Demo_MocapiAnimation\Scripts\CharacterControl.cs" />
+     <Compile Include="Assets\Demo_MocapiAnimation\Scripts\IdleTest.cs" />
      <Compile Include="Assets\Demo_MocapiAnimation\Scripts\MocapiMecanim.cs" />
      <None Include="Assets\ReadMe_MocapiAnimaton.txt" />
   </ItemGroup>

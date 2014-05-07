@@ -59,7 +59,7 @@ namespace Mocapianimation
         /// name of the joystic axis 
         /// </summary>
         public string joyMoveAxis = "Y axis";
-        public string joyTurnAxis = "5th axis";
+        public string joyTurnAxis = "4th axis";
         public string joyStrafeAxis = "X axis";
 
         /// <summary>
