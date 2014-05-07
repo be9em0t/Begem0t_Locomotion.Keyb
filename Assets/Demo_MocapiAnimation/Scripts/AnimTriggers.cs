@@ -1,33 +1,36 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AnimTriggers : MonoBehaviour
-{
-    // Create a reference to the animator component
-    private Animator animator;
-
-    void Start()
+namespace Mocapianimation 
+{ 
+    public class AnimTriggers : MonoBehaviour
     {
-        // initialise the reference to the animator component
-        animator = GetComponent<Animator>();
-    }
+        // Create a reference to the animator component
+        private Animator animator;
 
-    // check for colliders with a Trigger collider
-    // if we are entering something called JumpTrigger, set a bool parameter called JumpDown to true..
-    void OnTriggerEnter(Collider col)
-    {
-        if (col.gameObject.name == "SitZone")
+        void Start()
         {
-            animator.SetBool("SitDown", true);
+            // initialise the reference to the animator component
+            animator = GetComponent<Animator>();
         }
-    }
 
-    // ..and when leaving the trigger, reset it to false
-    void OnTriggerExit(Collider col)
-    {
-        if (col.gameObject.name == "SitZone")
+        // check for colliders with a Trigger collider
+        // if we are entering something called JumpTrigger, set a bool parameter called JumpDown to true..
+        void OnTriggerEnter(Collider col)
         {
-            animator.SetBool("SitDown", false);
+            if (col.gameObject.name == "SitZone")
+            {
+                animator.SetBool("SitDown", true);
+            }
+        }
+
+        // ..and when leaving the trigger, reset it to false
+        void OnTriggerExit(Collider col)
+        {
+            if (col.gameObject.name == "SitZone")
+            {
+                animator.SetBool("SitDown", false);
+            }
         }
     }
 }
