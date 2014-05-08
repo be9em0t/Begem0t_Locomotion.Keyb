@@ -331,10 +331,13 @@ namespace Mocapianimation
 			//change idle state if possible
 			if(Idle)
 			{
-                NextIdle = 0;
                 IdleVariants();
 			}
-
+            else
+            {
+                NextIdle = 0;
+            }
+ 
 			//update animator		    
 			anim.SetFloat("Move", stickInput.x);
 			anim.SetFloat("Direction", stickInput.y);
