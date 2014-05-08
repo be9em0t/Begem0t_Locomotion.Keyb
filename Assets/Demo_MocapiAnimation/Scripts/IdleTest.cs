@@ -12,6 +12,17 @@ public class IdleTest : MonoBehaviour {
     private Animator anim;
     private AnimatorStateInfo animState;
 
+    //TEMP
+    enum StandIdleVariants
+    {
+        Stand_Idle,
+        Stand_Idle_Long,
+        Stand_Idle_Dynamic,
+        Stand_Idle_Left,
+        Stand_Idle_Right,
+        Stand_Idle_SwitchFeet
+    }
+
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();

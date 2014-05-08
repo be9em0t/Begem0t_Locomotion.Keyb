@@ -33,7 +33,7 @@ namespace Mocapianimation
         /// </summary>
         private int[] idleAnims = new int[6] { idle00, idle01, idle02, idle03, idle04, idle05}; 
 
-
+        
 		/// <summary>
 		/// Selected input method
 		/// </summary>
