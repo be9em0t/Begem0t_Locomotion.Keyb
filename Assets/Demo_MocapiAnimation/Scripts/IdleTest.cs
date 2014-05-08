@@ -3,12 +3,15 @@ using System.Collections;
 
 public class IdleTest : MonoBehaviour {
 
+    Vector2[] idleAnimsList;    //array holding Idle animations' vectors in 2D BlendTree
+    //float[,] idleAnimsList = new float[,] { { 0f, 0f }, { 0f, 1f }, { -1f, 0.2f }, { 1f, 0.2f }, { -1f, -1f }, { 1f, -1f } }; //populate the idle animation's list
+
     int NextIdle;               //select next idle animation from a list
     bool NextIdleAllow = true;  //allow to select next idle animation
-    Vector2[] idleAnimsList;    //array holding Idle animations' vectors in 2D BlendTree
     Vector2 currentIdleVector;  //current idle animation' vector
     Vector2 nextIdleVector;     //next idle animation' vector
     float IdleSmooth = 0.01f;   //how much we want to lerp when transitioning between idle animations
+
     private Animator anim;
     private AnimatorStateInfo animState;
 
@@ -27,7 +30,7 @@ public class IdleTest : MonoBehaviour {
 	void Start () {
         anim = GetComponent<Animator>();
 
-        //describe Idle animations' vectors in 2D BlendTree (you need a corresponding 2D blendtree in Animator Controller)
+        //initialize Idle animations' vectors in 2D BlendTree (you need a corresponding 2D blendtree in Animator Controller)
         Vector2 idle1 = new Vector2(0f, 0f);
         Vector2 idle2 = new Vector2(0f, 1f);
         Vector2 idle3 = new Vector2(-1f, 0.2f);

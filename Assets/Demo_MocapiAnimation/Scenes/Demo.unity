@@ -1656,6 +1656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputMethod: 2
   axisLimit: .100000001
+  axisDeadZone: .100000001
   keyMoveAxis: 
   keyTurnAxis: 
   keyStrafeAxis: 
