@@ -24,8 +24,14 @@ namespace Mocapianimation
         Vector2 idle4 = new Vector2(1f, 0.2f);
         Vector2 idle5 = new Vector2(-1f, -1f);
         Vector2 idle6 = new Vector2(1f, -1f);
-        Vector2[] idleAnimsList;    //array holding Idle animations' vectors in 2D BlendTree
-        static int idleBlendTree = Animator.StringToHash("Base Layer.STAND_IDLE"); //idle blend tree
+        /// <summary>
+        /// array holding Idle Animations' vectors in 2D BlendTree
+        /// </summary>
+        Vector2[] idleAnimsList; 
+        /// <summary>
+        /// 2D blend tree, containing all idle variants
+        /// </summary>
+        static int idleBlendTree = Animator.StringToHash("Base Layer.STAND_IDLE"); 
 
         /// <summary>
         /// flag to indicate if any valid input was given
@@ -36,24 +42,24 @@ namespace Mocapianimation
         /// flag to indicate if idle state can change
         /// </summary>
         private bool canChangeState = true;
-        bool NextIdleAllow = true;  //allow to select next idle animation
 
         /// <summary>
         /// current idle state
         /// </summary>
-        private int CurrentIdleVariant = 1;
+        private Vector2 currentIdleVariant; 
         /// <summary>
         /// next idle state
         /// </summary>
-        private int NextIdleVariant = 1;
-
-        int NextIdle;               //select next idle animation from a list
-        Vector2 currentIdleVector;  //current idle animation' vector
-        Vector2 nextIdleVector;     //next idle animation' vector
-        float IdleSmooth = 0.01f;   //how much we want to lerp when transitioning between idle animations
-
-
-        
+        private Vector2 nextIdleVariant;     
+        /// <summary>
+        /// next idle animation number from a list
+        /// </summary>
+        private int NextIdle;
+        /// <summary>
+        /// how much we want to smooth transition between idle animations
+        /// </summary>
+        public float IdleSmooth = 3f;   
+ 
 		/// <summary>
 		/// Selected input method
 		/// </summary>
@@ -66,12 +72,12 @@ namespace Mocapianimation
         /// <summary>
         /// axisLimit for any action on an axis
         /// </summary>
-        public float axisLimit = 0.1f;
+        //public float axisLimit = 0.2f; //Using DeadZone instead
 
         /// <summary>
         /// dead zone for any action on an axis
         /// </summary>
-        public float axisDeadZone = 0.1f;
+        public float axisDeadZone = 0.2f;
 
         /// <summary>
         /// input values for Stick One and Stick Two
@@ -108,13 +114,6 @@ namespace Mocapianimation
         	get
         	{
         		animState = anim.GetCurrentAnimatorStateInfo(0);
-                //foreach (int s in idleAnims)
-                //{
-                //    if (animState.nameHash == s)
-                //    {
-                //        return true;
-                //    }
-                //}
 
                 if (animState.nameHash == idleBlendTree)
                 {
@@ -134,7 +133,7 @@ namespace Mocapianimation
             get { return move; }
             set
             {
-                if (value > axisLimit || value < -axisLimit)
+                if (value > axisDeadZone || value < -axisDeadZone)
                     idle = false;
 
                 move = value;
@@ -152,7 +151,7 @@ namespace Mocapianimation
             get { return strafe; }
             set
             {
-                if (value > axisLimit || value < -axisLimit)
+                if (value > axisDeadZone || value < -axisDeadZone)
                     idle = false;
 
                 strafe = value;
@@ -170,7 +169,7 @@ namespace Mocapianimation
             get { return direction; }
             set
             {
-                if (value > axisLimit || value < -axisLimit)
+                if (value > axisDeadZone || value < -axisDeadZone)
                     idle = false;
 
                 direction = value;
@@ -184,18 +183,18 @@ namespace Mocapianimation
 		/// looking direction of the character
         /// Unused.
 		/// </summary>
-        //public float LookAround
-        //{
-        //    get { return lookAround; }
-        //    set
-        //    {
-        //        if (value > axisLimit || move < -axisLimit)
-        //            idle = false;
+        public float LookAround
+        {
+            get { return lookAround; }
+            set
+            {
+                if (value > axisDeadZone || move < -axisDeadZone)
+                    idle = false;
 
-        //        lookAround = value;
-        //    }
-        //}
-        //private float lookAround;
+                lookAround = value;
+            }
+        }
+        private float lookAround;
 
 		/// <summary>
 		/// Run flag to indicate if character should be in running mode
@@ -271,11 +270,11 @@ namespace Mocapianimation
 
 		}
 
-		/// <summary>
-		/// validate parameters on start
-		/// </summary>
         void Start()
         {
+            /// <summary>
+            /// validate parameters on start
+            /// </summary>
             switch (inputMethod)
             {
                 case InputMethod.Keyboard:
@@ -297,7 +296,10 @@ namespace Mocapianimation
                     break;
             }
 
-            //populate the idle animation's list
+            /// <summary>
+            /// Populate the Idle Animation's list. 
+            /// Would be nice if thes could be read directly from Animator Controller
+            /// </summary>
             idleAnimsList = new Vector2[] { idle1, idle2, idle3, idle4, idle5, idle6 }; 
         }
 	
@@ -315,8 +317,6 @@ namespace Mocapianimation
 
 			UpdateAnimator();
 
-            Debug.Log(Idle + " : " + idle);
-
 		}
 
 
@@ -331,6 +331,7 @@ namespace Mocapianimation
 			//change idle state if possible
 			if(Idle)
 			{
+                NextIdle = 0;
                 IdleVariants();
 			}
 
@@ -338,7 +339,7 @@ namespace Mocapianimation
 			anim.SetFloat("Move", stickInput.x);
 			anim.SetFloat("Direction", stickInput.y);
             anim.SetFloat("Strafe", stickInput.z);
-            //anim.SetFloat("LookAround", lookAround);  //Unused
+            anim.SetFloat("LookAround", lookAround);  //Unused
 			anim.SetBool("Idle", idle);
 			anim.SetBool("SitDown", sitDown);
 			anim.SetBool("Alert", alert);
@@ -388,31 +389,30 @@ namespace Mocapianimation
 
             if( Input.GetKey(KeyCode.F1))
             {
-            	//set to keyboard
-            	inputMethod = InputMethod.Keyboard;
+                inputMethod = InputMethod.Keyboard;     //set to keyboard
             }
             else if( Input.GetKey(KeyCode.F2))
             {
-            	inputMethod = InputMethod.Mouse;
+                inputMethod = InputMethod.Mouse;        //set to mouse
             }
             else if( Input.GetKey(KeyCode.F3))
             {
-            	inputMethod = InputMethod.Joystick;
+                inputMethod = InputMethod.Joystick;     //set to joystick
             }
 
 		}
 
         /// <summary>
         /// Tweak input values acording to a deadzone.
+        /// Original code by stfx
         /// </summary>
         void ProcessDeadZone()
         {
 
-            //code by stfx
-            stickInput = new Vector3(Input.GetAxis(joyMoveAxis), Input.GetAxis(joyTurnAxis), Input.GetAxis(joyStrafeAxis));
+            //Here we need 3 axis working together. You may need different configuration.
+            stickInput = new Vector3(Input.GetAxis(joyMoveAxis), Input.GetAxis(joyTurnAxis), Input.GetAxis(joyStrafeAxis)); 
             float inputMagnitude = stickInput.magnitude;
 
-            //Precize DeadZone for Stick One            
             if (inputMagnitude < axisDeadZone)
             {
                 stickInput = Vector3.zero;
@@ -471,47 +471,28 @@ namespace Mocapianimation
 		/// <summary>
 		/// Change idle if possible
 		/// </summary>
-        //void IdleVariants()
-        //{
-        //    {
-
-        //        int animLoopNum = (int)animState.normalizedTime;
-        //        float animPercent = Mathf.Round(((animState.normalizedTime - animLoopNum) * 100f)) / 100f;     //round to DP2
-
-        //        if (animPercent > .85f && canChangeState == true)       //crossfade after this percent
-        //        {
-        //            while (CurrentIdleVariant == NextIdleVariant)
-        //                NextIdleVariant = UnityEngine.Random.Range(0, idleAnims.Length);  //random select next transition
-        //            canChangeState = false;                             //stop state change until next crossfade
-        //            CurrentIdleVariant = NextIdleVariant;               //start selection of next random clip
-        //            anim.CrossFade(idleAnims[NextIdleVariant], .1f, -1, 0f);    //Crossfade to
-        //        }
-        //        else if (animPercent < .3f && canChangeState == false)  //arm for a new crossfade
-        //        {
-        //            canChangeState = true;
-        //        }
-        //    }
-        //}
-
         void IdleVariants()
         {
             int animLoopNum = (int)animState.normalizedTime;
             float animPercent = Mathf.Round(((animState.normalizedTime - animLoopNum) * 100f)) / 100f;     //round to DP2
-            Debug.Log(animPercent);
-            if ((animPercent > .9f) && (NextIdleAllow == true))
+            //Debug.Log(animPercent);
+            if ((animPercent > .85f) && (canChangeState == true))
             {
                 NextIdle = UnityEngine.Random.Range(0, 6);  //random integer number between min [inclusive] and max [exclusive]
-                NextIdleAllow = false;
+                canChangeState = false;
             }
-            else if (animPercent > .0f && animPercent < .5f && (NextIdleAllow == false))
+            else if (animPercent > .0f && animPercent < .5f && (canChangeState == false))
             {
-                NextIdleAllow = true;
+                canChangeState = true;
             }
 
-            nextIdleVector = idleAnimsList[NextIdle];       //get the vector for the nex Idle animation
-            currentIdleVector = Vector2.Lerp(currentIdleVector, nextIdleVector, Time.time * IdleSmooth);  //lerp for a smooth transition in 2D blendTree
-            anim.SetFloat("IdleRandA", currentIdleVector.x);
-            anim.SetFloat("IdleRandB", currentIdleVector.y);
+            //get the vector for the nex Idle Animation
+            nextIdleVariant = idleAnimsList[NextIdle];
+            //smooth transition in 2D blendTree
+            currentIdleVariant = Vector2.Lerp(currentIdleVariant, nextIdleVariant, Time.deltaTime * IdleSmooth); 
+            //set the Animator Controller variables controlling 2D blend tree
+            anim.SetFloat("IdleRandA", currentIdleVariant.x);
+            anim.SetFloat("IdleRandB", currentIdleVariant.y);
         }
 
 	}

@@ -1654,9 +1654,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f05edd5611d774e4e97ca49607d43947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IdleSmooth: 3
   inputMethod: 2
-  axisLimit: .100000001
-  axisDeadZone: .100000001
+  axisDeadZone: .150000006
   keyMoveAxis: 
   keyTurnAxis: 
   keyStrafeAxis: 
