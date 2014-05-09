@@ -2,6 +2,7 @@ Library/
 obj/
 Temp/
 FBX.Sources/
+*.sln
 
 #################
 ## Visual Studio
