@@ -11,8 +11,15 @@ namespace Mocapianimation
         void Start()
         {
             Camera[] allCams = FindObjectsOfType(typeof(Camera)) as Camera[];
-            allCams[0].enabled = true;
-            camActive = allCams[0];
+
+            // Set initial camera
+            foreach (Camera cam in allCams)
+	    {
+            cam.enabled = false;
+	    }
+            allCams[1].enabled = true;
+            camActive = allCams[1];
+
         }
 
         // Update is called once per frame
@@ -49,8 +56,8 @@ namespace Mocapianimation
                     }
                     break;
                 }
-
             }
         }
+
     }
 }

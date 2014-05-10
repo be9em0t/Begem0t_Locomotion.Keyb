@@ -9,12 +9,28 @@ namespace Mocapianimation
         public float camZoom = 60f;         //camera FieldOfView
 
         Vector3 cameraOffset;
-        Transform avatarTransf;
+        public Transform avatarTransf;
 
         void Start()
         {
 
-            avatarTransf = GameObject.Find("Hips").transform;  //get target avatar's transform
+            //Get camera target
+
+
+            if (avatarTransf == null)
+            {
+
+                if (GameObject.Find("MocapiMan/MocapiMan_Root/Hips") != null)
+                {
+                    avatarTransf = GameObject.Find("MocapiMan/MocapiMan_Root/Hips").transform;  //get target avatar's transform
+                }
+                else
+                {
+                    Debug.Log("No camera target assigned. Trying to find alternative");          // Error if no camera target assigned
+                    avatarTransf = GameObject.Find("Hips").transform;  //get target avatar's transform
+                }
+
+            }
 
         }
 

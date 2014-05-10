@@ -1,1 +1,1 @@
-Guidelines
+Mocapi motion pack Guidelines
