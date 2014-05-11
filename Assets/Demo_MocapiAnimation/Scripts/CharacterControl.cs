@@ -63,11 +63,11 @@ namespace Mocapianimation
 		/// <summary>
 		/// Selected input method
 		/// </summary>
-		public enum InputMethod {None, Keyboard, Joystick, Mouse};
+		public enum InputMethod {None, Keyboard, Joystick, Mouse, All};
         /// <summary>
         /// current input method
         /// </summary>
-        public  InputMethod inputMethod = InputMethod.Joystick;
+        public  InputMethod inputMethod = InputMethod.All; //set default
 
         /// <summary>
         /// axisLimit for any action on an axis
@@ -87,23 +87,23 @@ namespace Mocapianimation
         /// <summary>
         /// Name of the keyboard axis
         /// </summary>
-        public string keyMoveAxis; //TODO define defaults
-        public string keyTurnAxis;
-        public string keyStrafeAxis;
+        public string keyMoveAxis = "keyboard move"; //TODO define defaults
+        public string keyTurnAxis = "keyboard turn";
+        public string keyStrafeAxis = "keyboard strafe";
 
         /// <summary>
         /// name of the joystic axis 
         /// </summary>
-        public string joyMoveAxis = "Y axis";
-        public string joyTurnAxis = "4th axis";
-        public string joyStrafeAxis = "X axis";
+        public string joyMoveAxis = "Y axis"; //inverted
+        public string joyTurnAxis = "4th axis"; //non-inverted
+        public string joyStrafeAxis = "X axis";  //non-inverted
 
         /// <summary>
         /// name of the mouse axis
         /// </summary>
-        public string mouseMoveAxis;
-        public string mouseTurnAxis;
-        public string mouseStrafeAxis;  //probably not axis but (mouse) key + mouseTurnAxis
+        string mouseMoveAxis = "mouse move";
+        string mouseTurnAxis = "mouse turn";
+        string mouseStrafeAxis = "mouse strafe";  //probably not axis but (mouse) key + mouseTurnAxis
 
 
         /// <summary>
@@ -294,6 +294,12 @@ namespace Mocapianimation
                         throw new System.ArgumentNullException("Missing Joystick axis! Please set up each axis!");
 
                     break;
+
+                case InputMethod.All:
+                    if (keyMoveAxis.Length == 0 || keyTurnAxis.Length == 0 || keyStrafeAxis.Length == 0 || joyMoveAxis.Length == 0 || joyTurnAxis.Length == 0 || joyStrafeAxis.Length == 0)
+                        throw new System.ArgumentNullException("Missing Joystick axis! Please set up each axis!");
+
+                    break;
             }
 
             /// <summary>
@@ -316,6 +322,18 @@ namespace Mocapianimation
             ProcessDeadZone();
 
 			UpdateAnimator();
+
+            ////mouse test
+            //if (Input.GetAxis(mouseTurnAxis) < 0)
+            //{
+            //    //Code for action on mouse moving left
+            //    print("Mouse moved left");
+            //}
+            //if (Input.GetAxis(mouseTurnAxis) > 0)
+            //{
+            //    //Code for action on mouse moving right
+            //    print("Mouse moved right");
+            //}
 
 		}
 
@@ -381,6 +399,10 @@ namespace Mocapianimation
             		ProcessJoystick();
             		break;
 
+                case InputMethod.All:
+                    ProcessAll();
+                    break;
+
             }
 
 			//process basic keys
@@ -402,6 +424,10 @@ namespace Mocapianimation
             {
                 inputMethod = InputMethod.Joystick;     //set to joystick
             }
+            else if (Input.GetKey(KeyCode.F4))
+            {
+                inputMethod = InputMethod.All;     //set to joystick
+            }
 
 		}
 
@@ -413,7 +439,8 @@ namespace Mocapianimation
         {
 
             //Here we need 3 axis working together. You may need different configuration.
-            stickInput = new Vector3(Input.GetAxis(joyMoveAxis), Input.GetAxis(joyTurnAxis), Input.GetAxis(joyStrafeAxis)); 
+            //stickInput = new Vector3(Input.GetAxis(joyMoveAxis) + Input.GetAxis(keyMoveAxis), Input.GetAxis(joyTurnAxis) + Input.GetAxis(keyTurnAxis), Input.GetAxis(joyStrafeAxis) + Input.GetAxis(keyStrafeAxis)); 
+            stickInput = new Vector3(Move, Direction, Strafe); 
             float inputMagnitude = stickInput.magnitude;
 
             if (inputMagnitude < axisDeadZone)
@@ -431,7 +458,18 @@ namespace Mocapianimation
 		/// <summary>
 		/// Process keyboard inputs
 		/// </summary>
-		void ProcessKeyboard()
+        void ProcessAll()
+        {
+            //process axis
+            Move = Input.GetAxis(joyMoveAxis) + Input.GetAxis(keyMoveAxis);         // +Input.GetAxis(mouseMoveAxis); //Need more work on mouse controls
+            Direction = Input.GetAxis(joyTurnAxis) + Input.GetAxis(keyTurnAxis);    // +Input.GetAxis(mouseTurnAxis);
+            Strafe = Input.GetAxis(joyStrafeAxis) + Input.GetAxis(keyStrafeAxis);   // +Input.GetAxis(mouseStrafeAxis);
+
+            //process buttons
+            //TODO implement
+        }
+
+        void ProcessKeyboard()
 		{
 			//process axis
             Move 		= Input.GetAxis(keyMoveAxis);
