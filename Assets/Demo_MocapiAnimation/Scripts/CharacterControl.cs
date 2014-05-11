@@ -105,6 +105,9 @@ namespace Mocapianimation
         string mouseTurnAxis = "mouse turn";
         string mouseStrafeAxis = "mouse strafe";  //probably not axis but (mouse) key + mouseTurnAxis
 
+        // Buttons
+        string joyAlertButton = "joystick button 4";
+        string joySitButton = "joystick button 0";
 
         /// <summary>
         /// Check if animation in any of the IDLE state
@@ -467,6 +470,10 @@ namespace Mocapianimation
 
             //process buttons
             //TODO implement
+            Alert = Input.GetButton(joyAlertButton);
+            //Run = Input.GetButton(joyAlertButton);
+            SitDown = Input.GetButton(joySitButton);
+
         }
 
         void ProcessKeyboard()

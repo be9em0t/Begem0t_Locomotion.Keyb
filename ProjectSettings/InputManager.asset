@@ -6,11 +6,11 @@ InputManager:
   m_Axes:
   - serializedVersion: 3
     m_Name: joystick button 0
-    descriptiveName: 
+    descriptiveName: SitDown
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick button 0
-    altNegativeButton: 
+    altNegativeButton: x
     altPositiveButton: 
     gravity: 0
     dead: 0
@@ -70,12 +70,12 @@ InputManager:
     joyNum: 1
   - serializedVersion: 3
     m_Name: joystick button 4
-    descriptiveName: 
+    descriptiveName: alert
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick button 4
-    altNegativeButton: 
-    altPositiveButton: mouse 2
+    altNegativeButton: z
+    altPositiveButton: 
     gravity: 1000
     dead: .00100000005
     sensitivity: 1000

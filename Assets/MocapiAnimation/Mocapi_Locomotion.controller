@@ -2038,7 +2038,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: IdleDELETE
+    m_ConditionEvent: Alert
     m_EventTreshold: 0
     m_ExitTime: .877049625
   m_Atomic: 1
@@ -3130,7 +3130,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: IdleDELETE
+    m_ConditionEvent: Alert
     m_EventTreshold: 0
     m_ExitTime: .95920217
   m_Atomic: 1
@@ -4612,6 +4612,19 @@ StateMachine:
       first: {fileID: 0}
       second: []
     data:
+      first: {fileID: 110278787}
+      second:
+      - {fileID: 110157565}
+      - {fileID: 110130790}
+      - {fileID: 110106754}
+      - {fileID: 110122142}
+      - {fileID: 110117968}
+      - {fileID: 110148758}
+      - {fileID: 110175970}
+      - {fileID: 110153778}
+      - {fileID: 110177817}
+      - {fileID: 110175877}
+    data:
       first: {fileID: 110201369}
       second:
       - {fileID: 110169963}
@@ -4727,19 +4740,6 @@ StateMachine:
       - {fileID: 110140155}
       - {fileID: 110117049}
       - {fileID: 110170073}
-    data:
-      first: {fileID: 110278787}
-      second:
-      - {fileID: 110157565}
-      - {fileID: 110130790}
-      - {fileID: 110106754}
-      - {fileID: 110122142}
-      - {fileID: 110117968}
-      - {fileID: 110148758}
-      - {fileID: 110175970}
-      - {fileID: 110153778}
-      - {fileID: 110177817}
-      - {fileID: 110175877}
     data:
       first: {fileID: 110279204}
       second:
