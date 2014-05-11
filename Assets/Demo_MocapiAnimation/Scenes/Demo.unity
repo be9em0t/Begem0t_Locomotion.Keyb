@@ -4395,7 +4395,6 @@ GameObject:
   - 54: {fileID: 1142203209}
   - 136: {fileID: 1142203208}
   - 114: {fileID: 1142203207}
-  - 114: {fileID: 1142203206}
   m_Layer: 0
   m_Name: DefaultAvatar
   m_TagString: Untagged
@@ -4416,17 +4415,6 @@ Transform:
   - {fileID: 762216992}
   - {fileID: 2065819698}
   m_Father: {fileID: 0}
---- !u!114 &1142203206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1142203204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77eda717f54152d4990d546e88013c34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1142203207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4982,7 +4970,6 @@ GameObject:
   - 54: {fileID: 1320681691}
   - 136: {fileID: 1320681694}
   - 114: {fileID: 1320681693}
-  - 114: {fileID: 1320681692}
   m_Layer: 0
   m_Name: MocapiMan
   m_TagString: Untagged
@@ -5019,17 +5006,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1320681692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1320681689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77eda717f54152d4990d546e88013c34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1320681693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5213,7 +5189,6 @@ GameObject:
   - 54: {fileID: 1359502422}
   - 136: {fileID: 1359502421}
   - 114: {fileID: 1359502420}
-  - 114: {fileID: 1359502419}
   m_Layer: 0
   m_Name: Ethan
   m_TagString: Untagged
@@ -5235,17 +5210,6 @@ Transform:
   - {fileID: 202033858}
   - {fileID: 1018980012}
   m_Father: {fileID: 0}
---- !u!114 &1359502419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1359502417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77eda717f54152d4990d546e88013c34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1359502420
 MonoBehaviour:
   m_ObjectHideFlags: 0

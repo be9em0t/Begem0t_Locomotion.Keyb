@@ -14,9 +14,10 @@ namespace Mocapianimation
 
             // Set initial camera
             foreach (Camera cam in allCams)
-	    {
-            cam.enabled = false;
-	    }
+            {
+                cam.enabled = false;
+                //Debug.Log(cam.name);
+            }
             allCams[1].enabled = true;
             camActive = allCams[1];
 
