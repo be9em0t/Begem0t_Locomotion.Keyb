@@ -44,6 +44,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: LookAround
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   - m_Name: Run
     m_Type: 4
     m_DefaultFloat: 0
@@ -58,12 +64,6 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
   - m_Name: IdleRandB
     m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: LookAround
-    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -2500,7 +2500,7 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110278787}
   m_DstState: {fileID: 110248116}
-  m_TransitionDuration: .0407978147
+  m_TransitionDuration: .0533445738
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 3
@@ -3638,7 +3638,7 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110278787}
   m_DstState: {fileID: 110238799}
-  m_TransitionDuration: .0407978147
+  m_TransitionDuration: .0607135519
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 3
@@ -5110,6 +5110,12 @@ StateMachine:
       - {fileID: 110175877}
       - {fileID: 110186384}
       - {fileID: 110142312}
+    data:
+      first: {fileID: 0}
+      second: []
+    data:
+      first: {fileID: 0}
+      second: []
     data:
       first: {fileID: 110208825}
       second:
