@@ -7,6 +7,9 @@ namespace Mocapianimation
     {
         public static Camera camActive;
 
+        // Buttons
+        string joyCameraButton = "joystick button 2";
+
         // Use this for initialization
         void Start()
         {
@@ -27,7 +30,8 @@ namespace Mocapianimation
         void Update()
         {
 
-            if (Input.GetKeyDown(KeyCode.C))
+            //Process Joystick button
+            if (Input.GetButtonDown(joyCameraButton))
             {
                 CamSwitch();
             }

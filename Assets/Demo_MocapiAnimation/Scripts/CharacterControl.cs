@@ -106,8 +106,9 @@ namespace Mocapianimation
         string mouseStrafeAxis = "mouse strafe";  //probably not axis but (mouse) key + mouseTurnAxis
 
         // Buttons
-        string joyAlertButton = "joystick button 4";
+        string joyAlertButton = "joystick button 3";
         string joySitButton = "joystick button 0";
+        string joyLookButton = "joystick button 4";
 
         /// <summary>
         /// Check if animation in any of the IDLE state
@@ -251,7 +252,22 @@ namespace Mocapianimation
 		}
 		private bool alert;
 
-		/// <summary>
+        /// <summary>
+        /// Look flag to indicate LookAround Mode
+        /// </summary>
+        public bool Look
+        {
+            get { return look; }
+            set
+            {
+                look = value;
+                if (value)
+                    idle = false;
+            }
+        }
+        private bool look;
+
+        /// <summary>
 		/// Animation controller
 		/// </summary>
 	 	private Animator anim;
@@ -363,10 +379,11 @@ namespace Mocapianimation
 			anim.SetFloat("Move", stickInput.x);
 			anim.SetFloat("Direction", stickInput.y);
             anim.SetFloat("Strafe", stickInput.z);
-            anim.SetFloat("LookAround", lookAround);  //Unused
+            //anim.SetFloat("LookAround", lookAround);  //Unused
 			anim.SetBool("Idle", idle);
 			anim.SetBool("SitDown", sitDown);
 			anim.SetBool("Alert", alert);
+            anim.SetBool("LookAround", look);
 			anim.SetBool("Run", run);
 
 			//Debug.Log("Move:"+move);
@@ -473,6 +490,7 @@ namespace Mocapianimation
             Alert = Input.GetButton(joyAlertButton);
             //Run = Input.GetButton(joyAlertButton);
             SitDown = Input.GetButton(joySitButton);
+            Look = Input.GetButton(joyLookButton);
 
         }
 

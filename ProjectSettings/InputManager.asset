@@ -10,7 +10,7 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick button 0
-    altNegativeButton: x
+    altNegativeButton: v
     altPositiveButton: 
     gravity: 0
     dead: 0
@@ -38,11 +38,11 @@ InputManager:
     joyNum: 1
   - serializedVersion: 3
     m_Name: joystick button 2
-    descriptiveName: 
+    descriptiveName: Camera
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick button 2
-    altNegativeButton: 
+    altNegativeButton: c
     altPositiveButton: 
     gravity: 0
     dead: 0
@@ -54,10 +54,10 @@ InputManager:
     joyNum: 1
   - serializedVersion: 3
     m_Name: joystick button 3
-    descriptiveName: 
+    descriptiveName: Alert
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: left alt
+    positiveButton: x
     altNegativeButton: 
     altPositiveButton: joystick button 3
     gravity: 0
@@ -70,7 +70,7 @@ InputManager:
     joyNum: 1
   - serializedVersion: 3
     m_Name: joystick button 4
-    descriptiveName: alert
+    descriptiveName: LookAround
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick button 4
