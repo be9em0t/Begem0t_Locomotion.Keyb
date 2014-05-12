@@ -1863,7 +1863,7 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Direction
-    m_EventTreshold: 0
+    m_EventTreshold: -.100000001
     m_ExitTime: .833333433
   m_Atomic: 1
   m_Solo: 0
@@ -2162,12 +2162,12 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110271105}
   m_DstState: {fileID: 110250303}
-  m_TransitionDuration: .374999285
+  m_TransitionDuration: .592645884
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Direction
-    m_EventTreshold: 0
+    m_EventTreshold: -.100000001
     m_ExitTime: .625000715
   m_Atomic: 1
   m_Solo: 0
@@ -2523,7 +2523,7 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Direction
-    m_EventTreshold: 0
+    m_EventTreshold: .100000001
     m_ExitTime: .833333433
   m_Atomic: 1
   m_Solo: 0
@@ -2576,16 +2576,16 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110209259}
   m_DstState: {fileID: 110250353}
-  m_TransitionDuration: .174418479
+  m_TransitionDuration: .0679709613
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 3
-    m_ConditionEvent: Direction
-    m_EventTreshold: -.300000012
-    m_ExitTime: .825581551
   - m_ConditionMode: 4
     m_ConditionEvent: Direction
-    m_EventTreshold: 0
+    m_EventTreshold: .100000001
+    m_ExitTime: .825581551
+  - m_ConditionMode: 3
+    m_ConditionEvent: Direction
+    m_EventTreshold: -.100000001
     m_ExitTime: .825581551
   m_Atomic: 1
   m_Solo: 0
@@ -3092,16 +3092,16 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110249756}
   m_DstState: {fileID: 110271105}
-  m_TransitionDuration: .174418479
+  m_TransitionDuration: .0932314843
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Direction
-    m_EventTreshold: .300000012
+    m_EventTreshold: .100000001
     m_ExitTime: .825581551
   - m_ConditionMode: 3
     m_ConditionEvent: Direction
-    m_EventTreshold: 0
+    m_EventTreshold: -.100000001
     m_ExitTime: .825581551
   m_Atomic: 1
   m_Solo: 0
@@ -3696,12 +3696,12 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110250353}
   m_DstState: {fileID: 110270486}
-  m_TransitionDuration: .374999285
+  m_TransitionDuration: .657351613
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Direction
-    m_EventTreshold: 0
+    m_EventTreshold: .100000001
     m_ExitTime: .625000715
   m_Atomic: 1
   m_Solo: 0
