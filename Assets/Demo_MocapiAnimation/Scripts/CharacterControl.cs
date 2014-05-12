@@ -120,9 +120,9 @@ namespace Mocapianimation
 
                 if (animState.nameHash == idleBlendTree)
                 {
+                    //Debug.Log("idle test " + animState.nameHash + " : " + idleBlendTree);
                     return true;
                 }
-
 				return false;
         	}
         }
@@ -232,7 +232,7 @@ namespace Mocapianimation
 
 				}
 				sitDown = value;
-			}
+            }
 		}
 		private bool sitDown;
 

@@ -4392,8 +4392,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1142203205}
   - 95: {fileID: 1142203210}
-  - 54: {fileID: 1142203209}
-  - 136: {fileID: 1142203208}
   - 114: {fileID: 1142203207}
   m_Layer: 0
   m_Name: DefaultAvatar
@@ -4435,34 +4433,6 @@ MonoBehaviour:
   joyMoveAxis: Y axis
   joyTurnAxis: 4th axis
   joyStrafeAxis: X axis
---- !u!136 &1142203208
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1142203204}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .150000006
-  m_Height: .150000006
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!54 &1142203209
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1142203204}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!95 &1142203210
 Animator:
   serializedVersion: 2
@@ -4967,9 +4937,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1320681690}
   - 95: {fileID: 1320681695}
-  - 54: {fileID: 1320681691}
-  - 136: {fileID: 1320681694}
-  - 114: {fileID: 1320681693}
+  - 114: {fileID: 1320681691}
   m_Layer: 0
   m_Name: MocapiMan
   m_TagString: Untagged
@@ -4991,22 +4959,7 @@ Transform:
   - {fileID: 30921020}
   - {fileID: 1424580463}
   m_Father: {fileID: 0}
---- !u!54 &1320681691
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1320681689}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
---- !u!114 &1320681693
+--- !u!114 &1320681691
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -5026,19 +4979,6 @@ MonoBehaviour:
   joyMoveAxis: Y axis
   joyTurnAxis: 4th axis
   joyStrafeAxis: X axis
---- !u!136 &1320681694
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1320681689}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .150000006
-  m_Height: .150000006
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!95 &1320681695
 Animator:
   serializedVersion: 2
@@ -5186,8 +5126,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1359502418}
   - 95: {fileID: 1359502423}
-  - 54: {fileID: 1359502422}
-  - 136: {fileID: 1359502421}
   - 114: {fileID: 1359502420}
   m_Layer: 0
   m_Name: Ethan
@@ -5230,34 +5168,6 @@ MonoBehaviour:
   joyMoveAxis: Y axis
   joyTurnAxis: 4th axis
   joyStrafeAxis: X axis
---- !u!136 &1359502421
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1359502417}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .150000006
-  m_Height: .150000006
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!54 &1359502422
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1359502417}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!95 &1359502423
 Animator:
   serializedVersion: 2
