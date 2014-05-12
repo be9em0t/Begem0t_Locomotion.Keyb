@@ -63,11 +63,11 @@ namespace Mocapianimation
 
             //Camera Zoom
             camera.fieldOfView = camZoom;
-            if (Input.GetKey(KeyCode.PageUp) || Input.GetKey(KeyCode.KeypadMinus))
+            if (Input.GetKey(KeyCode.Minus) || Input.GetKey(KeyCode.KeypadMinus))
             {
                 camZoom = camZoom - (10 * Time.deltaTime);
             }
-            else if (Input.GetKey(KeyCode.PageDown) || Input.GetKey(KeyCode.KeypadPlus))
+            else if (Input.GetKey(KeyCode.Equals) || Input.GetKey(KeyCode.KeypadPlus))
             {
                 camZoom = camZoom + (10 * Time.deltaTime);
             }

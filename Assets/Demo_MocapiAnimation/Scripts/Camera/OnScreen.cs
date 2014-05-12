@@ -1,6 +1,4 @@
-﻿//Stolen from Attila
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 namespace Mocapianimation
@@ -10,15 +8,36 @@ namespace Mocapianimation
 
         //public float hSliderValue = 0.0F;
 
-        public Color guiTextColor;
-        public Color guiTitleColor;
+        Color guiTextColor;
+        Color guiTitleColor;
+        bool showInfo = true;
 
         void Start()
         {
             // hSliderValue = MocapiMecanim.animSpeed; // ToDo after A.
         }
 
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                showInfo = !showInfo;
+            }
+
+        }
+
         void OnGUI()
+        {
+
+
+            if (showInfo == true)
+            {
+                PanelInfo();
+            }
+
+        }
+
+        void PanelInfo()
         {
             guiTextColor = new Color(0.94F, 0.6F, 0.2F, .92F);
             guiTitleColor = new Color(1F, 1F, 1F, .85F);
@@ -41,39 +60,28 @@ namespace Mocapianimation
             mainStyle.font = GUI.skin.font;
 
 
-            //		GUI.Box(new Rect(10,10,100,90), "Hotkeys");
+            GUI.Box(new Rect(5, 10, 230, 400), MocapiCameraSwitcher.camActive.name + " (C to switch)");
 
-            //		string s = player.speed.ToString();
-            //		string d = player.direction.ToString();
+            //GUI.Label(new Rect(10, 20, 200, 120), MocapiCameraSwitcher.camActive.name, smallStyle);
+            GUI.Label(new Rect(10, 40, 200, 120), "Toggle this panel: I", mainStyle);
+            GUI.Label(new Rect(10, 60, 200, 120), "Camera Switch C, Gamepad Button 2", mainStyle);
+            GUI.Label(new Rect(10, 80, 200, 120), "Camera Zoom : PgUp PgDn, +/-", mainStyle);
+            GUI.Label(new Rect(10, 100, 200, 120), "Reset Camera: Home, Gamepad 6", mainStyle);
 
-            //		GUI.Box (new Rect (8,8,220,260), "Avatar Controller  (v"+version+")");
+            GUI.Label(new Rect(10, 140, 200, 120), "GAMEPAD", smallStyle);
+            GUI.Label(new Rect(10, 160, 200, 120), "Move: Left Stick Y", mainStyle);
+            GUI.Label(new Rect(10, 180, 200, 120), "Sidestep: LStick X", mainStyle);
+            GUI.Label(new Rect(10, 200, 200, 120), "Look L/R: RStick + button 4", mainStyle);
+            GUI.Label(new Rect(10, 220, 200, 120), "Alert: button 3", mainStyle);
+            GUI.Label(new Rect(10, 240, 200, 120), "Sit Down: button 0", mainStyle);
 
-            //		GUI.Label(new Rect(10, 25, 160,20), "Avatar: "+player.avatar.name);		
-            //		GUI.Label(new Rect(10,45, 100,20), "Speed:    "+s);		
-            //		GUI.Label(new Rect(10,55, 100,40), "Direction:"+d);
+            GUI.Label(new Rect(10, 280, 200, 120), "KEYBOARD", smallStyle);
+            GUI.Label(new Rect(10, 300, 200, 120), "Move avatar: Arrows, AWSD", mainStyle);
+            GUI.Label(new Rect(10, 320, 200, 120), "__SpeedUp: LeftShift+Arrows", mainStyle);
+            GUI.Label(new Rect(10, 340, 200, 120), "SideStep: Alt+Arrows", mainStyle);
+            GUI.Label(new Rect(10, 360, 200, 120), "Look L/R: Arrows + Z", mainStyle);
+            GUI.Label(new Rect(10, 380, 200, 120), "Alert: X", mainStyle);
 
-            GUI.Label(new Rect(10, 20, 200, 120), MocapiCameraSwitcher.camActive.name, smallStyle);
-            GUI.Label(new Rect(10, 40, 200, 120), "Camera Left/Right : < >", mainStyle);
-            GUI.Label(new Rect(10, 60, 200, 120), "Camera Up/Down : \" ?", mainStyle);
-            GUI.Label(new Rect(10, 80, 200, 120), "Camera Zoom : PgUp PgDn", mainStyle);
-            GUI.Label(new Rect(10, 100, 200, 120), "Reset Camera: Home", mainStyle);
-
-            GUI.Label(new Rect(10, 140, 200, 120), "KEYBOARD", smallStyle);
-            GUI.Label(new Rect(10, 160, 200, 120), "Move avatar : Arrows", mainStyle);
-            GUI.Label(new Rect(10, 180, 200, 120), "SpeedUp : LeftShift+Arrows", mainStyle);
-            GUI.Label(new Rect(10, 200, 200, 120), "SideStep: Alt+Arrows", mainStyle);
-            GUI.Label(new Rect(10, 220, 200, 120), "Look L/R: L+Arrows", mainStyle);
-            GUI.Label(new Rect(10, 240, 200, 120), "Alert : Q key", mainStyle);
-
-            GUI.Label(new Rect(10, 280, 200, 120), "GAMEPAD", smallStyle);
-            GUI.Label(new Rect(10, 300, 200, 120), "Camera : DPad", mainStyle);
-            GUI.Label(new Rect(10, 320, 200, 120), "Camera Reset : Back/Home", mainStyle);
-
-            GUI.Label(new Rect(10, 340, 200, 120), "Move : Left Stick", mainStyle);
-            GUI.Label(new Rect(10, 360, 200, 120), "Sidestep: LStick + xbox B", mainStyle);
-            GUI.Label(new Rect(10, 380, 200, 120), "Look L/R: LStick + xbox X", mainStyle);
-            GUI.Label(new Rect(10, 400, 200, 120), "Alert : Left Bumper", mainStyle);
-            GUI.Label(new Rect(10, 420, 200, 120), "Stop : + xbox A", mainStyle);
 
             ////GUI.Label(new Rect(10, 360, 200, 120), "Alert : Left Bumper", mainStyle);
             //if (GUI.Button(new Rect(Screen.width - 110, 30, 30, 28), ".5x"))
