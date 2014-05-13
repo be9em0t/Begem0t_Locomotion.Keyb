@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 31a076e511ce0d9479d273fecf04bc6f
+guid: 2f0419277e1098548bba730cee5eabd4
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -157,19 +157,17 @@ ModelImporter:
     400148: TongueBack
     400150: TongueTip
     400152: UD_Reference
-    7400000: Sit-2-Look_R
-    7400002: Sit_Idle
-    7400004: Stand-2-Sit
-    7400006: Sit-2-Stand
-    7400008: Sit_Look_Right-2-Left
-    7400010: Sit-2-Look_L
-    7400012: Sit_Look_L_Loop
-    7400014: Sit_Look_R_Loop
-    7400016: Sit-2-SitLook_R
-    7400018: Sit-2-SitLook_L
-    7400020: SitLook-2-Sit_R
-    7400022: SitLook-2-Sit_L
-    7400024: Sit_Look_Left-2-Right
+    7400000: Sit_Idle
+    7400002: Stand-2-Sit
+    7400004: Sit-2-Stand
+    7400006: Sit-2-Look_R
+    7400008: Sit-2-Look_L
+    7400010: Sit_Look_Right-2-Left
+    7400012: Sit_Look_Left-2-Right
+    7400014: Sit_Look_L_Loop
+    7400016: Sit_Look_R_Loop
+    7400018: SitLook-2-Sit_R
+    7400020: SitLook-2-Sit_L
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -189,8 +187,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Sit_Idle
       takeName: Sits
-      firstFrame: 1264
-      lastFrame: 1475
+      firstFrame: 1318
+      lastFrame: 1452
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -281,51 +279,51 @@ ModelImporter:
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw
         weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/JawEND
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipCorner
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipLower
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipCorner
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipLower
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack/TongueTip
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftCheek
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEye
         weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidLower
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidUpper
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftInnerBrow
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftIOuterBrow
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftLipUpper
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftNostril
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightCheek
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEye
         weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidLower
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidUpper
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightInnerBrow
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightIOuterBrow
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightLipUpper
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightNostril
-        weight: 0
+        weight: 1
       - path: UD_Reference/Hips/Spine/Chest/RightShoulder
         weight: 1
       - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm
@@ -369,8 +367,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Stand-2-Sit
       takeName: Sits
-      firstFrame: 1168
-      lastFrame: 1263
+      firstFrame: 1175
+      lastFrame: 1252
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -549,8 +547,368 @@ ModelImporter:
     - serializedVersion: 16
       name: Sit-2-Stand
       takeName: Sits
-      firstFrame: 1476
+      firstFrame: 1489
       lastFrame: 1551
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: UD_Reference
+        weight: 1
+      - path: UD_Reference/Hips
+        weight: 1
+      - path: UD_Reference/Hips/LeftUpLeg
+        weight: 1
+      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToes
+        weight: 1
+      - path: UD_Reference/Hips/RightUpLeg
+        weight: 1
+      - path: UD_Reference/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: UD_Reference/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: UD_Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToes
+        weight: 1
+      - path: UD_Reference/Hips/Spine
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/JawEND
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipCorner
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipLower
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipCorner
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipLower
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack/TongueTip
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftCheek
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEye
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidLower
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidUpper
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftInnerBrow
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftIOuterBrow
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftLipUpper
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftNostril
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightCheek
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEye
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidLower
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidUpper
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightInnerBrow
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightIOuterBrow
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightLipUpper
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightNostril
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Sit-2-Look_R
+      takeName: Sits
+      firstFrame: 2390
+      lastFrame: 2403
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: UD_Reference
+        weight: 1
+      - path: UD_Reference/Hips
+        weight: 1
+      - path: UD_Reference/Hips/LeftUpLeg
+        weight: 1
+      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToes
+        weight: 1
+      - path: UD_Reference/Hips/RightUpLeg
+        weight: 1
+      - path: UD_Reference/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: UD_Reference/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: UD_Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToes
+        weight: 1
+      - path: UD_Reference/Hips/Spine
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/JawEND
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipCorner
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipLower
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipCorner
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipLower
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack/TongueTip
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftCheek
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEye
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidLower
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidUpper
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftInnerBrow
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftIOuterBrow
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftLipUpper
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftNostril
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightCheek
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEye
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidLower
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidUpper
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightInnerBrow
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightIOuterBrow
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightLipUpper
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightNostril
+        weight: 0
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Sit-2-Look_L
+      takeName: Sits
+      firstFrame: 2461
+      lastFrame: 2485
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -729,188 +1087,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Sit_Look_Right-2-Left
       takeName: Sits
-      firstFrame: 2626.5
-      lastFrame: 2641.6001
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 0
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 1
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: UD_Reference
-        weight: 1
-      - path: UD_Reference/Hips
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToes
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg/RightLeg
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg/RightLeg/RightFoot
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToes
-        weight: 1
-      - path: UD_Reference/Hips/Spine
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/JawEND
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipCorner
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipCorner
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack/TongueTip
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftCheek
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEye
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftInnerBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftIOuterBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftLipUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftNostril
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightCheek
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEye
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightInnerBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightIOuterBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightLipUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightNostril
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: Sit-2-Look_R
-      takeName: Sit
-      firstFrame: 2381
-      lastFrame: 2440
+      firstFrame: 2626
+      lastFrame: 2639
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1087,10 +1265,10 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: Sit-2-Look_L
-      takeName: Sit
-      firstFrame: 2458
-      lastFrame: 2528
+      name: Sit_Look_Left-2-Right
+      takeName: Sits
+      firstFrame: 2254
+      lastFrame: 2265
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1269,8 +1447,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Sit_Look_L_Loop
       takeName: Sits
-      firstFrame: 2476.3999
-      lastFrame: 2503.5
+      firstFrame: 2476
+      lastFrame: 2503
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1451,366 +1629,6 @@ ModelImporter:
       takeName: Sits
       firstFrame: 2423
       lastFrame: 2425
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 0
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 1
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: UD_Reference
-        weight: 1
-      - path: UD_Reference/Hips
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToes
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg/RightLeg
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg/RightLeg/RightFoot
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToes
-        weight: 1
-      - path: UD_Reference/Hips/Spine
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/JawEND
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipCorner
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipCorner
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack/TongueTip
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftCheek
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEye
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftInnerBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftIOuterBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftLipUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftNostril
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightCheek
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEye
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightInnerBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightIOuterBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightLipUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightNostril
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: Sit-2-SitLook_R
-      takeName: Sits
-      firstFrame: 2381
-      lastFrame: 2423
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 0
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 1
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: UD_Reference
-        weight: 1
-      - path: UD_Reference/Hips
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToes
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg/RightLeg
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg/RightLeg/RightFoot
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToes
-        weight: 1
-      - path: UD_Reference/Hips/Spine
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/JawEND
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipCorner
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipCorner
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack/TongueTip
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftCheek
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEye
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftInnerBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftIOuterBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftLipUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftNostril
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightCheek
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEye
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightInnerBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightIOuterBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightLipUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightNostril
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: Sit-2-SitLook_L
-      takeName: Sits
-      firstFrame: 2458
-      lastFrame: 2482
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -2171,186 +1989,6 @@ ModelImporter:
       takeName: Sits
       firstFrame: 2498
       lastFrame: 2528
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 0
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 1
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: UD_Reference
-        weight: 1
-      - path: UD_Reference/Hips
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
-        weight: 1
-      - path: UD_Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToes
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg/RightLeg
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg/RightLeg/RightFoot
-        weight: 1
-      - path: UD_Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToes
-        weight: 1
-      - path: UD_Reference/Hips/Spine
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/JawEND
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipCorner
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipCorner
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack/TongueTip
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftCheek
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEye
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftInnerBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftIOuterBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftLipUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/LeftNostril
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightCheek
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEye
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidLower
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightEyelidUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightInnerBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightIOuterBrow
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightLipUpper
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/Neck/Head/RightNostril
-        weight: 0
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
-        weight: 1
-      - path: UD_Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: Sit_Look_Left-2-Right
-      takeName: Sits
-      firstFrame: 2252
-      lastFrame: 2265
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -2984,7 +2622,7 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Sit(Clone)
+    - name: Sit1000(Clone)
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -2995,58 +2633,58 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Hips
-      position: {x: -3.81469718e-08, y: .963793993, z: 1.56072204e-08}
+      position: {x: -1.49011612e-08, y: .978280783, z: .0381617546}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftUpLeg
       position: {x: -.0754494965, y: -.0456640199, z: 0}
-      rotation: {x: -2.42750411e-05, y: 7.47978504e-07, z: 2.95334075e-07, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftLeg
       position: {x: -.0205504987, y: -.409129977, z: .00717136543}
-      rotation: {x: 4.73177424e-05, y: -1.03655793e-06, z: -2.96895468e-08, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftFoot
       position: {x: -.00515299942, y: -.423155904, z: -.0120320888}
-      rotation: {x: -2.30427049e-05, y: 2.88566241e-07, z: -2.65634299e-07, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftToes
       position: {x: -.00748699997, y: -.0731673017, z: .145427123}
-      rotation: {x: 0, y: -9.31736242e-21, z: -0, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightUpLeg
       position: {x: .0754495338, y: -.0456639901, z: 0}
-      rotation: {x: -3.59787227e-05, y: -1.11145562e-06, z: 6.1028004e-08, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightLeg
       position: {x: .0205504671, y: -.409130007, z: .00717136543}
-      rotation: {x: 7.05595594e-05, y: 1.52972052e-06, z: 4.33798029e-08, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightFoot
       position: {x: .00515299942, y: -.423155904, z: -.0120320888}
-      rotation: {x: -3.45808367e-05, y: -4.18270758e-07, z: -1.04431194e-07, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightToes
       position: {x: .00748699997, y: -.0731673017, z: .145427495}
-      rotation: {x: 0, y: -6.77626358e-21, z: -0, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Spine
       position: {x: -0, y: .0922631845, z: .0157713313}
-      rotation: {x: -1.71477339e-08, y: 1.62806715e-12, z: -6.93298849e-29, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Chest
       position: {x: -0, y: .162540287, z: .0218507219}
-      rotation: {x: 0, y: 0, z: 6.16297582e-33, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftShoulder
@@ -3056,7 +2694,7 @@ ModelImporter:
       transformModified: 1
     - name: LeftArm
       position: {x: -.0835747719, y: .036097575, z: 3.10862448e-17}
-      rotation: {x: .00946439337, y: .0436917059, z: -.223042443, w: .973783135}
+      rotation: {x: .00946439244, y: .0436917022, z: -.223042443, w: .973783135}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftForeArm
@@ -3066,22 +2704,22 @@ ModelImporter:
       transformModified: 1
     - name: LeftHand
       position: {x: -.24638927, y: -2.84217088e-16, z: 4.440892e-18}
-      rotation: {x: 4.97008788e-11, y: -1.22390764e-10, z: -.0214135554, w: .999770701}
+      rotation: {x: 5.26163002e-11, y: -2.31476869e-11, z: -.0214135554, w: .999770701}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandIndex1
       position: {x: -.0751257986, y: -.00784140453, z: .0326526426}
-      rotation: {x: -.00211892067, y: .0802574381, z: .017538188, w: .996617615}
+      rotation: {x: -.00211892044, y: .0802574307, z: .017538188, w: .996617615}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandIndex2
       position: {x: -.03979728, y: 4.98084046e-05, z: .00118575036}
-      rotation: {x: .000501912844, y: .0154709108, z: .0404132381, w: .999063194}
+      rotation: {x: .000501887174, y: .0154708829, z: .0404114686, w: .999063253}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandIndex3
       position: {x: -.0279684775, y: -6.28122399e-09, z: -5.17186614e-08}
-      rotation: {x: 2.60208521e-18, y: 1.38777878e-17, z: -9.54097912e-18, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandMiddle1
@@ -3091,67 +2729,67 @@ ModelImporter:
       transformModified: 1
     - name: LeftHandMiddle2
       position: {x: -.0442804359, y: 4.79887422e-06, z: -.000425400125}
-      rotation: {x: -.00136210897, y: -.0191518143, z: .037882328, w: .999097764}
+      rotation: {x: -.00136210537, y: -.0191517696, z: .037882328, w: .999097764}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandMiddle3
       position: {x: -.0339648277, y: -1.21979289e-08, z: 3.75648268e-09}
-      rotation: {x: -5.42101086e-20, y: -1.73472348e-18, z: -6.96854006e-18, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandPinky1
       position: {x: -.0656599477, y: -.00782510638, z: -.0322512463}
-      rotation: {x: -.000912634889, y: .0121610546, z: .0212239232, w: .999700427}
+      rotation: {x: -.00091244519, y: .0121609634, z: .0212254729, w: .999700367}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandPinky2
       position: {x: -.0308054481, y: -3.0874573e-05, z: -.0014480775}
-      rotation: {x: -.000226876262, y: -.0096942205, z: .000442027056, w: .999952912}
+      rotation: {x: -.00022683572, y: -.00969419908, z: .000437793758, w: .999952912}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandPinky3
       position: {x: -.0230640266, y: -6.40258077e-06, z: 1.8332095e-08}
-      rotation: {x: 8.67361738e-19, y: 1.38777878e-17, z: 4.33680869e-19, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandRing1
       position: {x: -.0703021064, y: -.00374530931, z: -.0114117917}
-      rotation: {x: -.000324133376, y: .0115980003, z: .0247374251, w: .999626696}
+      rotation: {x: -.000324081338, y: .011597679, z: .0247380957, w: .999626637}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandRing2
       position: {x: -.0431354567, y: -2.08823076e-05, z: -.00223517837}
-      rotation: {x: -.00120336202, y: -.0231135003, z: .0409838893, w: .998891771}
+      rotation: {x: -.00120336155, y: -.023113519, z: .0409839004, w: .998891711}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandRing3
       position: {x: -.0308355652, y: 7.71052527e-11, z: -1.64932707e-08}
-      rotation: {x: -1.73472348e-18, y: 4.70197776e-36, z: -2.71050543e-18, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandThumb1
       position: {x: -.0142312413, y: -.0123778246, z: .0255316682}
-      rotation: {x: -.0123152072, y: -.00852637365, z: .0125835352, w: .999808669}
+      rotation: {x: -.0123131769, y: -.00852595549, z: .0125850644, w: .999808669}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandThumb2
       position: {x: -.0163739994, y: -.00528999977, z: .0234914087}
-      rotation: {x: -.0260631368, y: .0966900215, z: .00360707124, w: .994966745}
+      rotation: {x: -.0260629691, y: .0966900885, z: .00360711711, w: .994966745}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftHandThumb3
       position: {x: -.0254599992, y: -.00763999997, z: .0208330005}
-      rotation: {x: 2.94550535e-08, y: -9.99196494e-13, z: -2.23167535e-12, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Neck
       position: {x: -0, y: .235723898, z: -.0324132554}
-      rotation: {x: 4.16822132e-09, y: 3.97511885e-15, z: 1.34480504e-20, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Head
       position: {x: -0, y: .106355801, z: .0113267815}
-      rotation: {x: -4.16822132e-09, y: -3.97511885e-15, z: -1.34480528e-20, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Jaw
@@ -3206,7 +2844,7 @@ ModelImporter:
       transformModified: 1
     - name: LeftEyelidLower
       position: {x: -.0356189571, y: .0650736615, z: .076234743}
-      rotation: {x: -.0348994955, y: 0, z: -0, w: .999390841}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: LeftEyelidUpper
@@ -3246,7 +2884,7 @@ ModelImporter:
       transformModified: 1
     - name: RightEyelidLower
       position: {x: .0356200002, y: .065072827, z: .0762374029}
-      rotation: {x: -.0348994955, y: 0, z: -0, w: .999390841}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightEyelidUpper
@@ -3286,12 +2924,12 @@ ModelImporter:
       transformModified: 1
     - name: RightForeArm
       position: {x: .253428251, y: .00601135287, z: -.0167045239}
-      rotation: {x: -.000616519421, y: .022078624, z: -.016070243, w: .999626875}
+      rotation: {x: -.000616519479, y: .022078624, z: -.016070243, w: .999626875}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHand
       position: {x: .245373696, y: .0216417722, z: .00555046508}
-      rotation: {x: -6.3539167e-11, y: 6.78281264e-10, z: .0214136932, w: .999770701}
+      rotation: {x: -6.62291957e-11, y: 5.79034209e-10, z: .0214136932, w: .999770701}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandIndex1
@@ -3301,72 +2939,72 @@ ModelImporter:
       transformModified: 1
     - name: RightHandIndex2
       position: {x: .0370584019, y: .00072612107, z: .0145388944}
-      rotation: {x: -.00332747842, y: .0159316231, z: .0606359392, w: .998027265}
+      rotation: {x: -.00332657527, y: .0159315132, z: .0606337301, w: .998027384}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandIndex3
       position: {x: .0252250377, y: -.00496646529, z: .0110121462}
-      rotation: {x: -1.50463288e-34, y: 1.38777878e-17, z: 1.08420217e-17, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandMiddle1
       position: {x: .0756476447, y: .00479140272, z: .0118531818}
-      rotation: {x: -.00076887355, y: .0333210863, z: .020907538, w: .999225736}
+      rotation: {x: -.000768873491, y: .0333210863, z: .020907538, w: .999225736}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandMiddle2
       position: {x: .0438090637, y: .000194188149, z: .00645493623}
-      rotation: {x: -.004130363, y: -.0335115269, z: .0761194378, w: .996526897}
+      rotation: {x: -.00413071783, y: -.0335121825, z: .0761222467, w: .996526659}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandMiddle3
       position: {x: .0330724716, y: -.00754753686, z: .00168984616}
-      rotation: {x: 3.25260652e-19, y: 1.73472348e-18, z: 1.86465833e-17, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandPinky1
       position: {x: .0668033436, y: -.00199410878, z: -.0307561457}
-      rotation: {x: .00317631476, y: -.192004949, z: .0451141372, w: .980351329}
+      rotation: {x: .00317624724, y: -.192005128, z: .0451152772, w: .980351269}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandPinky2
       position: {x: .0285308417, y: -.001397143, z: -.0116237961}
-      rotation: {x: -.00225326791, y: -.00959619693, z: -.0107575767, w: .999893546}
+      rotation: {x: -.00225326512, y: -.00959619787, z: -.0107575683, w: .999893546}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandPinky3
       position: {x: .0214268602, y: -.000553508929, z: -.00851660781}
-      rotation: {x: 8.67361738e-19, y: 1.38777878e-17, z: -1.20370622e-35, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandRing1
       position: {x: .0705984756, y: .00245709647, z: -.00982145779}
-      rotation: {x: .000710961292, y: -.054342214, z: .0349444672, w: .9979105}
+      rotation: {x: .000710908906, y: -.0543424115, z: .0349448994, w: .99791044}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandRing2
       position: {x: .0428871848, y: -.00137538207, z: -.00494585792}
-      rotation: {x: .000484266173, y: -.0212899484, z: .0698598176, w: .997329533}
+      rotation: {x: .000484264252, y: -.0212899651, z: .0698598176, w: .997329533}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandRing3
       position: {x: .0295006037, y: -.00769293541, z: -.00462225592}
-      rotation: {x: 1.73472348e-18, y: 6.9388939e-18, z: -2.07082615e-17, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandThumb1
       position: {x: .0146849155, y: -.0111049423, z: .0258580949}
-      rotation: {x: -.012817964, y: -.00325559382, z: .0314608924, w: .999417484}
+      rotation: {x: -.0128179658, y: -.00325560011, z: .0314608924, w: .999417484}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandThumb2
       position: {x: .0163739994, y: -.00528999977, z: .0234913602}
-      rotation: {x: -.0260627288, y: -.0966906324, z: -.00360751199, w: .994966686}
+      rotation: {x: -.0260646697, y: -.0966894478, z: -.00360540138, w: .994966745}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: RightHandThumb3
       position: {x: .0254599992, y: -.00763999997, z: .0208330005}
-      rotation: {x: -9.85110535e-11, y: 1.08881762e-12, z: 5.12745553e-13, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     armTwist: .5
