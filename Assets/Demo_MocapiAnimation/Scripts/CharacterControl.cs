@@ -58,16 +58,16 @@ namespace Mocapianimation
         /// <summary>
         /// how much we want to smooth transition between idle animations
         /// </summary>
-        public float IdleSmooth = 3f;   
+        private float IdleSmooth = 3f;   
  
 		/// <summary>
 		/// Selected input method
 		/// </summary>
-		public enum InputMethod {None, Keyboard, Joystick, Mouse, All};
+		private enum InputMethod {None, Keyboard, Joystick, Mouse, All};
         /// <summary>
         /// current input method
         /// </summary>
-        public  InputMethod inputMethod = InputMethod.All; //set default
+        private InputMethod inputMethod = InputMethod.All; //set default
 
         /// <summary>
         /// axisLimit for any action on an axis
@@ -90,6 +90,12 @@ namespace Mocapianimation
         public string keyMoveAxis = "keyboard move"; //TODO define defaults
         public string keyTurnAxis = "keyboard turn";
         public string keyStrafeAxis = "keyboard strafe";
+        private KeyCode keyRunButton = KeyCode.LeftShift;
+        private float keyRunMultiplier = 0f;
+        /// <summary>
+        /// how much we want to smooth transition between idle animations
+        /// </summary>
+        private float keybSmooth = 5f;   
 
         /// <summary>
         /// name of the joystic axis 
@@ -109,6 +115,7 @@ namespace Mocapianimation
         string joyAlertButton = "joystick button 3";
         string joySitButton = "joystick button 0";
         string joyLookButton = "joystick button 4";
+
 
         /// <summary>
         /// Check if animation in any of the IDLE state
@@ -204,7 +211,7 @@ namespace Mocapianimation
 		/// Run flag to indicate if character should be in running mode
 		/// </summary>
 		public bool Run
-		{
+		{            
 			get{ return run;}
 			set
 			{
@@ -376,8 +383,8 @@ namespace Mocapianimation
             }
  
 			//update animator		    
-			anim.SetFloat("Move", stickInput.x);
-			anim.SetFloat("Direction", stickInput.y);
+			anim.SetFloat("Move", stickInput.y);
+			anim.SetFloat("Direction", stickInput.x);
             anim.SetFloat("Strafe", stickInput.z);
             //anim.SetFloat("LookAround", lookAround);  //Unused
 			anim.SetBool("Idle", idle);
@@ -426,6 +433,8 @@ namespace Mocapianimation
             }
 
 			//process basic keys
+            //Fixed in "All inputs" mode.
+            //You can enable input switching
 			if (Input.GetKey(KeyCode.Escape))
             {
                 Debug.Log("Exit!");
@@ -434,15 +443,15 @@ namespace Mocapianimation
 
             if( Input.GetKey(KeyCode.F1))
             {
-                inputMethod = InputMethod.Keyboard;     //set to keyboard
+                //inputMethod = InputMethod.Keyboard;     //set to keyboard
             }
             else if( Input.GetKey(KeyCode.F2))
             {
-                inputMethod = InputMethod.Mouse;        //set to mouse
+                //inputMethod = InputMethod.Mouse;        //set to mouse
             }
             else if( Input.GetKey(KeyCode.F3))
             {
-                inputMethod = InputMethod.Joystick;     //set to joystick
+                //inputMethod = InputMethod.Joystick;     //set to joystick
             }
             else if (Input.GetKey(KeyCode.F4))
             {
@@ -459,8 +468,7 @@ namespace Mocapianimation
         {
 
             //Here we need 3 axis working together. You may need different configuration.
-            //stickInput = new Vector3(Input.GetAxis(joyMoveAxis) + Input.GetAxis(keyMoveAxis), Input.GetAxis(joyTurnAxis) + Input.GetAxis(keyTurnAxis), Input.GetAxis(joyStrafeAxis) + Input.GetAxis(keyStrafeAxis)); 
-            stickInput = new Vector3(Move, Direction, Strafe); 
+            stickInput = new Vector3(Direction, Move, Strafe); 
             float inputMagnitude = stickInput.magnitude;
 
             if (inputMagnitude < axisDeadZone)
@@ -476,24 +484,40 @@ namespace Mocapianimation
         }
 
 		/// <summary>
-		/// Process keyboard inputs
+		/// Process all inputs
 		/// </summary>
         void ProcessAll()
         {
+
+            if (Run == true)
+            {
+                keyRunMultiplier = Mathf.Lerp(keyRunMultiplier, 1f, Time.deltaTime * keybSmooth );
+
+            }
+            else
+            {
+                keyRunMultiplier = Mathf.Lerp(keyRunMultiplier, .5f, Time.deltaTime * keybSmooth );
+            }
+
+
             //process axis
-            Move = Input.GetAxis(joyMoveAxis) + Input.GetAxis(keyMoveAxis);         // +Input.GetAxis(mouseMoveAxis); //Need more work on mouse controls
-            Direction = Input.GetAxis(joyTurnAxis) + Input.GetAxis(keyTurnAxis);    // +Input.GetAxis(mouseTurnAxis);
-            Strafe = Input.GetAxis(joyStrafeAxis) + Input.GetAxis(keyStrafeAxis);   // +Input.GetAxis(mouseStrafeAxis);
+            Move = Input.GetAxis(joyMoveAxis) + (Input.GetAxis(keyMoveAxis) * keyRunMultiplier);         // +Input.GetAxis(mouseMoveAxis); //Need more work on mouse controls
+            Direction = Input.GetAxis(joyTurnAxis) + Input.GetAxis(keyTurnAxis);                        // +Input.GetAxis(mouseTurnAxis);
+            Strafe = Input.GetAxis(joyStrafeAxis) + Input.GetAxis(keyStrafeAxis) ;                       // +Input.GetAxis(mouseStrafeAxis);
 
             //process buttons
             //TODO implement
             Alert = Input.GetButton(joyAlertButton);
-            //Run = Input.GetButton(joyAlertButton);
+            Run = Input.GetKey(keyRunButton);            
             SitDown = Input.GetButton(joySitButton);
             Look = Input.GetButton(joyLookButton);
 
         }
 
+        /// <summary>
+        /// Process keyboard inputs
+        /// Template. Not used.
+        /// </summary>
         void ProcessKeyboard()
 		{
 			//process axis
@@ -507,6 +531,7 @@ namespace Mocapianimation
 
 		/// <summary>
 		/// Process joystick inputs
+        /// Template. Not used.
 		/// </summary>
 		void ProcessJoystick()
 		{
@@ -522,7 +547,8 @@ namespace Mocapianimation
 
 		/// <summary>
 		/// Process mouse inputs
-		/// </summary>
+        /// Template. Not used.
+        /// </summary>
 		void ProcessMouse()
 		{
 			//process axis

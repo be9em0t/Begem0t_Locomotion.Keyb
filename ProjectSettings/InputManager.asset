@@ -10,7 +10,7 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick button 0
-    altNegativeButton: v
+    altNegativeButton: x
     altPositiveButton: 
     gravity: 0
     dead: 0
@@ -57,7 +57,7 @@ InputManager:
     descriptiveName: Alert
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: x
+    positiveButton: z
     altNegativeButton: 
     altPositiveButton: joystick button 3
     gravity: 0
@@ -74,7 +74,7 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick button 4
-    altNegativeButton: z
+    altNegativeButton: left alt
     altPositiveButton: 
     gravity: 1000
     dead: .00100000005
@@ -406,7 +406,7 @@ InputManager:
     joyNum: 1
   - serializedVersion: 3
     m_Name: 6th axis
-    descriptiveName: 
+    descriptiveName: vew from left-right
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -416,13 +416,13 @@ InputManager:
     dead: .100000001
     sensitivity: 1
     snap: 0
-    invert: 1
+    invert: 0
     type: 2
     axis: 5
     joyNum: 1
   - serializedVersion: 3
     m_Name: 7th axis
-    descriptiveName: 
+    descriptiveName: view front-back
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
