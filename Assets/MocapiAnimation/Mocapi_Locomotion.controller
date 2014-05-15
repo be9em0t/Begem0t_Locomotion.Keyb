@@ -5513,7 +5513,7 @@ StateMachine:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: STRAFE
+  m_Name: SIDESTEP
   m_DefaultState: {fileID: 110234886}
   m_States:
   - {fileID: 110277196}
