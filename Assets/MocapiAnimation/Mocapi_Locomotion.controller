@@ -5086,9 +5086,9 @@ StateMachine:
   m_ChildStateMachinePosition:
   - {x: 60, y: -108, z: 0}
   - {x: 348, y: 48, z: 0}
-  - {x: -276, y: 48, z: 0}
+  - {x: -180, y: -36, z: 0}
   - {x: 348, y: -96, z: 0}
-  - {x: -264, y: 180, z: 0}
+  - {x: -180, y: 180, z: 0}
   - {x: 348, y: 180, z: 0}
   - {x: 60, y: 180, z: 0}
   - {x: 50, y: 50, z: 0}
@@ -5524,7 +5524,25 @@ StateMachine:
   - {fileID: 110221282}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
-  m_OrderedTransitions: {}
+  m_OrderedTransitions:
+    data:
+      first: {fileID: 110234886}
+      second:
+      - {fileID: 110179694}
+      - {fileID: 110140369}
+    data:
+      first: {fileID: 110277196}
+      second:
+      - {fileID: 110164611}
+      - {fileID: 110171627}
+    data:
+      first: {fileID: 110283416}
+      second:
+      - {fileID: 110135753}
+    data:
+      first: {fileID: 110298051}
+      second:
+      - {fileID: 110148891}
   m_MotionSetCount: 2
   m_AnyStatePosition: {x: 828, y: 96, z: 0}
   m_ParentStateMachinePosition: {x: 804, y: 24, z: 0}
