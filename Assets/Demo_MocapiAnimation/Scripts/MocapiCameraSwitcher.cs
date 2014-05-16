@@ -8,11 +8,12 @@ namespace Mocapianimation
         public static Camera camActive;
 
         /// Name of the joystick buttons
-        string joyCameraButton = "joystick button 2";
+        public static string joyCameraButton; // camera switch
 
         // Use this for initialization
         void Start()
         {
+
             Camera[] allCams = FindObjectsOfType(typeof(Camera)) as Camera[];
 
             // Set initial camera
@@ -51,13 +52,11 @@ namespace Mocapianimation
                     {
                         allCams[0].enabled = true;
                         camActive = allCams[0];
-                        //Debug.Log("Switched to camera " + allCams[0].name);
                     }
                     else
                     {
                         allCams[i + 1].enabled = true;
                         camActive = allCams[i + 1];
-                        //Debug.Log("Switched to camera " + allCams[i + 1].name);
                     }
                     break;
                 }

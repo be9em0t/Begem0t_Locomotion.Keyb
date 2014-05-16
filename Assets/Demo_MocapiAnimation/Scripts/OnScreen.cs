@@ -8,12 +8,8 @@ namespace Mocapianimation
 
         Color guiTextColor;
         Color guiTitleColor;
-        bool showInfo = true;
+        public static bool showInfo = true;
 
-        void Start()
-        {
-
-        }
 
         void Update()
         {
@@ -69,8 +65,8 @@ namespace Mocapianimation
             mainStyleCentered.font = GUI.skin.font;
 
             // Make a background box
-            GUI.Box(new Rect(5, 5, 240, 400), "");
-            GUI.Label(new Rect(10, 12, 200, 120), MocapiCameraSwitcher.camActive.name, headerStyleCentered);
+            GUI.Box(new Rect(5, 5, 240, 400), Mocapianimation.InputSettings.assses);
+            //GUI.Label(new Rect(10, 12, 200, 120), MocapiCameraSwitcher.camActive.name, headerStyleCentered);
             GUI.Label(new Rect(10, 30, 200, 120), "(C to change, H to hide)", mainStyleCentered);
 
             GUI.Label(new Rect(10, 60, 200, 120), "Zoom : PgUp PgDn, +/-", mainStyle);
