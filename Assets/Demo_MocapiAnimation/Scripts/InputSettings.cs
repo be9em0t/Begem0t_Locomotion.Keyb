@@ -10,12 +10,24 @@ namespace Mocapianimation
 
         public static string assses;
         public static bool showError;
-        string axisName = "Xx axis";
+
+        /// <summary>
+        /// name of the joystic axis 
+        /// </summary>
+        public static string joyMoveAxis = "Y axis"; //inverted
+        public static string joyTurnAxis = "4th axis"; //non-inverted
+        public static string joyStrafeAxis = "X axis";  //non-inverted
+
+        /// <summary>
+        /// name of the joystic axis 
+        /// </summary>
+        public static string joyCameraButton = "joystick button 7"; 
+ 
         bool IsAxisAvailable(string axisName)
         {
             try
             {
-                Input.GetAxis(axisName);
+                Input.GetAxis(joyStrafeAxis);
                 return true;
             }
             catch 
@@ -27,38 +39,28 @@ namespace Mocapianimation
 
     void Awake()
     {
-        //if (IsAxisAvailable(axisName) == false)
-        //{
-        //    Mocapianimation.OnScreen.showInfo = false;
-        //    showError = true;
-        //    Application.Quit();
-        //}
-
-        //showError = true;
-        //Debug.Log(showError);
-        //Debug.Log(Input.GetAxis("X axis").ToString());
-        //Debug.Log(Input.GetAxis("XXX axis").ToString());
-        assses = IsAxisAvailable(axisName).ToString();
-        Debug.Log(assses);
-
-        //Debug.Log(IsAxisAvailable(axisName));
-        //Mocapianimation.OnScreen.showInfo = false;
+        if (IsAxisAvailable(joyStrafeAxis) == false)
+        {
+            Mocapianimation.OnScreen.showInfo = false;
+            showError = true;
+        }
 
         
         
         //Switch between cameras
-        Mocapianimation.MocapiCameraSwitcher.joyCameraButton = "joystick button 7";
-        //try
-        //{
-        //    Input.GetButton(Mocapianimation.MocapiCameraSwitcher.joyCameraButton); //
-        //}
-        //catch (UnityException e)
-        //{
-        //    Debug.Log("Input Error: " + "\n" + e.ToString());
-        //    Mocapianimation.OnScreen.showInfo = false;
-        //    showError = true;
-        //    Application.Quit();
-        //}
+        Mocapianimation.MocapiCameraSwitcher.joyCameraButton = joyCameraButton;
+        try
+        {
+            Input.GetButton(Mocapianimation.MocapiCameraSwitcher.joyCameraButton); //
+        }
+        catch (UnityException e)
+        {
+            throw new System.InvalidOperationException("what a crap: " + e);
+            //Debug.Log("Input Error: " + "\n" + e.ToString());
+            //Mocapianimation.OnScreen.showInfo = false;
+            //showError = true;
+            //Application.Quit();
+        }
     }
 
 	// Use this for initialization
@@ -82,9 +84,9 @@ namespace Mocapianimation
     void ErrorInfo()
     {
         GUI.Box(new Rect((Screen.width - (Screen.width * .8f)) / 2, (Screen.height - (Screen.height * .5f)) / 2, Screen.width * .8f, Screen.height * .5f), "Error");
-        //GUI.Label(new Rect(155, 12, 200, 120), MocapiCameraSwitcher.camActive.name, headerStyleCentered);
     }
-	// Update is called once per frame
+
+        // Update is called once per frame
 	void Update () {
 	}
 

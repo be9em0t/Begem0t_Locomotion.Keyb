@@ -100,9 +100,9 @@ namespace Mocapianimation
         /// <summary>
         /// name of the joystic axis 
         /// </summary>
-        public string joyMoveAxis = "Y axis"; //inverted
-        public string joyTurnAxis = "4th axis"; //non-inverted
-        public string joyStrafeAxis = "X axis";  //non-inverted
+        public string joyMoveAxis = Mocapianimation.InputSettings.joyMoveAxis; //"Y axis"; //inverted
+        public string joyTurnAxis = Mocapianimation.InputSettings.joyTurnAxis; //non-inverted
+        public string joyStrafeAxis = Mocapianimation.InputSettings.joyStrafeAxis; //non-inverted
 
         /// <summary>
         /// name of the mouse axis
