@@ -52,7 +52,8 @@
      <Compile Include="Assets\Demo_MocapiAnimation\Scripts\MocapiCameraSwitcher.cs" />
      <Compile Include="Assets\Demo_MocapiAnimation\Scripts\MocapiCameraTrailing.cs" />
      <Compile Include="Assets\Demo_MocapiAnimation\Scripts\OnScreen.cs" />
-     <None Include="Assets\MocapiMotionPack\ReadMe_MocapiAnimaton.txt" />
+     <None Include="Assets\Demo_MocapiAnimation\ReadMe_Demo.txt" />
+     <None Include="Assets\MocapiMotionPack\ReadMe_MMP.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

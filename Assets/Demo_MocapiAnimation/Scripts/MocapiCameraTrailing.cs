@@ -16,8 +16,11 @@ namespace Mocapianimation
         public float camZoom = 1.7f;         //camera FieldOfView
 
         /// Names of Camera control axis and buttons
-        string joyCameraLeftRight = Mocapianimation.InputSettings.joyCameraLeftRight;
-        string joyCameraFrontBack = Mocapianimation.InputSettings.joyCameraFrontBack;
+        string joyDPadX = Mocapianimation.InputSettings.joyDPadX;
+        string joyDPadY = Mocapianimation.InputSettings.joyDPadY;
+        string joyHatX = Mocapianimation.InputSettings.joyHatX;
+        string joyHatY = Mocapianimation.InputSettings.joyHatY;
+ 
         string joyCamResetButton = Mocapianimation.InputSettings.joyCamResetButton;
         void Start()
         {
@@ -31,14 +34,13 @@ namespace Mocapianimation
 
         }
 
-        void FixedUpdate()
+        void Update()
         {
+            PositionChange();
 
             // set the camera to standard position and direction
             transform.position = Vector3.Lerp(transform.position, standardPos.position, Time.deltaTime * smooth);
             transform.forward = Vector3.Lerp(transform.forward, standardPos.transform.forward, Time.deltaTime * smooth);
-
-            PositionChange();
 
         }
 
@@ -47,19 +49,19 @@ namespace Mocapianimation
         {
 
             //Rotate Camera Around
-            if (Input.GetKey(KeyCode.Keypad8) || (Input.GetAxis(joyCameraFrontBack) < -0.1f)) //from behind
+            if (Input.GetKey(KeyCode.Keypad8) || (Input.GetAxis(joyDPadY) < -0.5f) || (Input.GetAxis(joyHatY) < -0.5f)) //from behind
             {
                 standardPos = CamPosBehind.transform;
             }
-            else if (Input.GetKey(KeyCode.Keypad2) || (Input.GetAxis(joyCameraFrontBack) > 0.1f)) //from front
+            else if (Input.GetKey(KeyCode.Keypad2) || (Input.GetAxis(joyDPadY) > 0.5f) || (Input.GetAxis(joyHatY) > 0.5f)) //from front
             {
                 standardPos = CamPosFront.transform;
             }
-            else if (Input.GetKey(KeyCode.Keypad6) || (Input.GetAxis(joyCameraLeftRight) > 0.1f)) //from left
+            else if (Input.GetKey(KeyCode.Keypad6) || (Input.GetAxis(joyDPadX) > 0.5f) || (Input.GetAxis(joyHatX) > 0.5f)) //from left
             {
                 standardPos = CamPosLeft.transform;
             }
-            else if (Input.GetKey(KeyCode.Keypad4) || (Input.GetAxis(joyCameraLeftRight) < -0.1f)) //from right
+            else if (Input.GetKey(KeyCode.Keypad4) || (Input.GetAxis(joyDPadX) < -0.5f) || (Input.GetAxis(joyHatX) < -0.5f)) //from right
             {
                 standardPos = CamPosRight.transform;
             }

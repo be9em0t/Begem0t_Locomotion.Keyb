@@ -88,8 +88,9 @@ namespace Mocapianimation
         /// </summary>
         string keyMoveAxis = Mocapianimation.InputSettings.keyMoveAxis; //TODO define defaults
         string keyTurnAxis = Mocapianimation.InputSettings.keyTurnAxis;
-        string keyStrafeAxis = Mocapianimation.InputSettings.keyStrafeAxis;
+        //string keyStrafeAxis = Mocapianimation.InputSettings.keyStrafeAxis;
         private KeyCode keyRunButton = Mocapianimation.InputSettings.keyRunButton;
+        private KeyCode keyStrafeButton = Mocapianimation.InputSettings.keyStrafeButton;
         private float keyRunMultiplier = 0f;
 
         /// <summary>
@@ -97,17 +98,17 @@ namespace Mocapianimation
         /// </summary>
         string joyMoveAxis = Mocapianimation.InputSettings.joyMoveAxis;  //inverted
         string joyTurnAxis = Mocapianimation.InputSettings.joyTurnAxis; //non-inverted
-        string joyStrafeAxis = Mocapianimation.InputSettings.joyStrafeAxis; //non-inverted
+        //string joyStrafeAxis = Mocapianimation.InputSettings.joyStrafeAxis; //non-inverted
         string joyAlertButton = Mocapianimation.InputSettings.joyAlertButton;
         string joySitButton = Mocapianimation.InputSettings.joySitButton;
         string joyLookButton = Mocapianimation.InputSettings.joyLookButton;
-
+        string joyStrafeButton = Mocapianimation.InputSettings.joyStrafeButton;
         /// <summary>
         /// Mouse axis (unused)
         /// </summary>
         string mouseMoveAxis = Mocapianimation.InputSettings.mouseMoveAxis;
         string mouseTurnAxis = Mocapianimation.InputSettings.mouseTurnAxis;
-        string mouseStrafeAxis = Mocapianimation.InputSettings.mouseStrafeAxis;  //probably not axis but (mouse) key + mouseTurnAxis
+        //string mouseStrafeAxis = Mocapianimation.InputSettings.mouseStrafeAxis;  //probably not axis but (mouse) key + mouseTurnAxis
 
         /// <summary>
         /// Animation controller
@@ -156,19 +157,19 @@ namespace Mocapianimation
 		/// <summary>
 		/// strafe value
 		/// </summary>
-        public float Strafe
-        {
-            get { return strafe; }
-            set
-            {
-                if (value > axisDeadZone || value < -axisDeadZone)
-                    idle = false;
+        //public float Strafe
+        //{
+        //    get { return strafe; }
+        //    set
+        //    {
+        //        if (value > axisDeadZone || value < -axisDeadZone)
+        //            idle = false;
 
-                strafe = value;
+        //        strafe = value;
 
-            }
-        }
-		private float strafe;
+        //    }
+        //}
+        //private float strafe;
 
 		/// <summary>
 		/// direction of the character
@@ -191,18 +192,18 @@ namespace Mocapianimation
 		/// looking direction of the character
         /// Unused.
 		/// </summary>
-        public float LookAround
-        {
-            get { return lookAround; }
-            set
-            {
-                if (value > axisDeadZone || move < -axisDeadZone)
-                    idle = false;
+        //public float LookAround
+        //{
+        //    get { return lookAround; }
+        //    set
+        //    {
+        //        if (value > axisDeadZone || move < -axisDeadZone)
+        //            idle = false;
 
-                lookAround = value;
-            }
-        }
-        private float lookAround;
+        //        lookAround = value;
+        //    }
+        //}
+        //private float lookAround;
 
 		/// <summary>
 		/// Run flag to indicate if character should be in running mode
@@ -219,6 +220,22 @@ namespace Mocapianimation
 			}
 		}
 		private bool run;
+
+        /// <summary>
+        /// Strafe flag to indicate if character should be in sidestepping mode
+        /// </summary>
+        public bool Strafe
+        {
+            get { return strafe; }
+            set
+            {
+                if (value)
+                    idle = false;
+
+                strafe = value;
+            }
+        }
+        private bool strafe;
 
 		/// <summary>
 		/// Sit flag to indicate sit animation
@@ -360,13 +377,14 @@ namespace Mocapianimation
 			//update animator		    
 			anim.SetFloat("Move", stickInput.y);
 			anim.SetFloat("Direction", stickInput.x);
-            anim.SetFloat("Strafe", stickInput.z);
+            //anim.SetFloat("Strafe", stickInput.z);
             //anim.SetFloat("LookAround", lookAround);  //Unused
 			anim.SetBool("Idle", idle);
 			anim.SetBool("SitDown", sitDown);
 			anim.SetBool("Alert", alert);
             anim.SetBool("LookAround", look);
 			anim.SetBool("Run", run);
+            anim.SetBool("Strafe", strafe);
 
 			//Debug.Log("Move:"+move);
 			//Debug.Log("Dir:"+direction);
@@ -442,12 +460,12 @@ namespace Mocapianimation
         {
 
             //Here we need 3 axis working together. You may need different configuration.
-            stickInput = new Vector3(Direction, Move, Strafe); 
+            stickInput = new Vector2(Direction, Move); 
             float inputMagnitude = stickInput.magnitude;
 
             if (inputMagnitude < axisDeadZone)
             {
-                stickInput = Vector3.zero;
+                stickInput = Vector2.zero;
             }
             else
             {
@@ -477,14 +495,16 @@ namespace Mocapianimation
             //process axis
             Move = Input.GetAxis(joyMoveAxis) + (Input.GetAxis(keyMoveAxis) * keyRunMultiplier);         // +Input.GetAxis(mouseMoveAxis); //Need more work on mouse controls
             Direction = Input.GetAxis(joyTurnAxis) + Input.GetAxis(keyTurnAxis);                        // +Input.GetAxis(mouseTurnAxis);
-            Strafe = Input.GetAxis(joyStrafeAxis) + Input.GetAxis(keyStrafeAxis) ;                       // +Input.GetAxis(mouseStrafeAxis);
+            //Strafe = Input.GetAxis(joyStrafeAxis) + Input.GetAxis(keyStrafeAxis) ;                       // +Input.GetAxis(mouseStrafeAxis);
 
-            //process buttons
-            //TODO implement
+            //process Joystick buttons
             Alert = Input.GetButton(joyAlertButton);
-            Run = Input.GetKey(keyRunButton);            
+            Strafe = Input.GetKey(joyStrafeButton) || Input.GetKey(keyStrafeButton);
             SitDown = Input.GetButton(joySitButton);
             Look = Input.GetButton(joyLookButton);
+
+            //process Keyboard buttons
+            Run = Input.GetKey(keyRunButton);
 
         }
 
@@ -497,7 +517,7 @@ namespace Mocapianimation
 			//process axis
             Move 		= Input.GetAxis(keyMoveAxis);
             Direction 	= Input.GetAxis(keyTurnAxis);
-            Strafe 		= Input.GetAxis(keyStrafeAxis);
+            //Strafe 		= Input.GetAxis(keyStrafeAxis);
 
 			//process buttons
 			//TODO implement
@@ -512,7 +532,7 @@ namespace Mocapianimation
 			//process axis
             Move 		= Input.GetAxis(joyMoveAxis);
             Direction 	= Input.GetAxis(joyTurnAxis);
-			Strafe 		= Input.GetAxis(joyStrafeAxis);
+			//Strafe 		= Input.GetAxis(joyStrafeAxis);
 
 
 			//process buttons
@@ -528,7 +548,7 @@ namespace Mocapianimation
 			//process axis
             Move 		= Input.GetAxis(mouseMoveAxis);
             Direction = Input.GetAxis(mouseTurnAxis);
-            Strafe 		= Input.GetAxis(mouseStrafeAxis);
+            //Strafe 		= Input.GetAxis(mouseStrafeAxis);
 
 			//process buttons
 			//TODO implement

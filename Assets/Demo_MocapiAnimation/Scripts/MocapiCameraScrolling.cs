@@ -39,7 +39,7 @@ namespace Mocapianimation
 
         }
 
-        void FixedUpdate()
+        void Update()
         {
             PositionChange();
 
