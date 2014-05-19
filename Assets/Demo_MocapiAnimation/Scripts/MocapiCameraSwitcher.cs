@@ -8,7 +8,7 @@ namespace Mocapianimation
         public static Camera camActive;
 
         /// Name of the joystick buttons
-        public static string joyCamSwitchButton; // camera switch
+        string joyCamSwitchButton=Mocapianimation.InputSettings.joyCamSwitchButton; // camera switch
 
         // Use this for initialization
         void Start()

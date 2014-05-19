@@ -179,7 +179,7 @@ ModelImporter:
     - serializedVersion: 16
       name: SideStep_Start_R
       takeName: SideStep_R
-      firstFrame: 463
+      firstFrame: 470
       lastFrame: 500
       wrapMode: 0
       orientationOffsetY: 5

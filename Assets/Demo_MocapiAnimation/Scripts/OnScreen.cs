@@ -6,34 +6,23 @@ namespace Mocapianimation
     public class OnScreen : MonoBehaviour
     {
 
-        Color guiTextColor;
-        Color guiTitleColor;
-        public static bool showInfo = true;
-
+        public static Color guiTextColor;
+        public static Color guiTitleColor;
 
         void Update()
         {
 
-            // Toggle Info panel
-            if (Input.GetKeyDown(KeyCode.H))
-            {
-                showInfo = !showInfo;
-            }
+
 
         }
 
         void OnGUI()
         {
 
-            // Toggle Info panel
-            if (showInfo == true)
-            {
-                PanelInfo();
-            }
 
         }
 
-        void PanelInfo()
+        public static void PanelInfo()
         {
             guiTextColor = new Color(0.94F, 0.6F, 0.2F, .92F);
             guiTitleColor = new Color(1F, 1F, 1F, .85F);
@@ -66,7 +55,7 @@ namespace Mocapianimation
 
             // Make a background box
             GUI.Box(new Rect(5, 5, 240, 400), Mocapianimation.InputSettings.assses);
-            //GUI.Label(new Rect(10, 12, 200, 120), MocapiCameraSwitcher.camActive.name, headerStyleCentered);
+            GUI.Label(new Rect(10, 12, 200, 120), MocapiCameraSwitcher.camActive.name, headerStyleCentered);
             GUI.Label(new Rect(10, 30, 200, 120), "(C to change, H to hide)", mainStyleCentered);
 
             GUI.Label(new Rect(10, 60, 200, 120), "Zoom : PgUp PgDn, +/-", mainStyle);
@@ -88,5 +77,12 @@ namespace Mocapianimation
             GUI.Label(new Rect(10, 380, 200, 120), "Sit Down: X", mainStyle);
 
         }
+
+        //Format Error Info panel
+        public static void ErrorInfo()
+        {
+            GUI.Box(new Rect((Screen.width - (Screen.width * .8f)) / 2, (Screen.height - (Screen.height * .5f)) / 2, Screen.width * .8f, Screen.height * .5f), "Input Manager Error. \n\n Please replace \n ProjectSettings\\InputManager.asset \n with the one contained in \n Assets\\Demo_MocapiAnimation\\InputManager_Demo.zip");
+        }
+
     }
 }

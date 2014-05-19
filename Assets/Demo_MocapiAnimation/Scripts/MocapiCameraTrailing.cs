@@ -20,8 +20,8 @@ namespace Mocapianimation
         string joyDPadY = Mocapianimation.InputSettings.joyDPadY;
         string joyHatX = Mocapianimation.InputSettings.joyHatX;
         string joyHatY = Mocapianimation.InputSettings.joyHatY;
- 
         string joyCamResetButton = Mocapianimation.InputSettings.joyCamResetButton;
+
         void Start()
         {
 

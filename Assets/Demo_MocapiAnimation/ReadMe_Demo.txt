@@ -4,4 +4,4 @@ to folder ProjectSettings, overwriting the default InputManager.
 
 Caution:
 this will overwrite any custom Input Settings. 
-Please backup InputManager.asset
+Please backup InputManager.asset first!
