@@ -14,33 +14,38 @@ namespace Mocapianimation
         /// <summary>
         /// Names of Avatar keyboard axis and buttons
         /// </summary>
-        public static string keyMoveAxis = "keyboard move"; 
-        public static string keyTurnAxis = "keyboard turn";
-        public static string keyStrafeAxis = "keyboard strafe";
+        public static string keyMoveAxis = "keyboard Y";
+        public static string keyTurnAxis = "keyboard X";
+        public static string keyStrafeAxis = "keyboard X2";
         public static KeyCode keyRunButton = KeyCode.LeftShift;
+        public static KeyCode keyStrafeButton = KeyCode.LeftAlt;
 
         /// <summary>
         /// Names of Avatar joystick axis and buttons
         /// </summary>
-        public static string joyMoveAxis = "Y axis"; //inverted
-        public static string joyTurnAxis = "4th axis"; //non-inverted
-        public static string joyStrafeAxis = "X axis";  //non-inverted
+        public static string joyMoveAxis = "joystick Y"; //inverted
+        public static string joyTurnAxis = "joystick X"; //non-inverted
+        public static string joyStrafeAxis = "joystick X2";  //non-inverted
         public static string joyAlertButton = "joystick button 3";
         public static string joySitButton = "joystick button 0";
-        public static string joyLookButton = "joystick button 4";
+        public static string joyLookButton = "joystick button 5";
+        public static string joyStrafeButton = "joystick button 4";
 
         /// <summary>
         /// Names of Avatar mouse axis
         /// </summary>
-        public static string mouseMoveAxis = "mouse move";
-        public static string mouseTurnAxis = "mouse turn";
-        public static string mouseStrafeAxis = "mouse strafe";  //probably not axis but (mouse) key + mouseTurnAxis
+        public static string mouseMoveAxis = "Mouse Y";
+        public static string mouseTurnAxis = "Mouse X";
+        public static string mouseStrafeAxis = "Mouse X";  //probably not axis but (mouse) key + mouseTurnAxis
 
         /// <summary>
         /// Names of Camera control axis and buttons
         /// </summary>
-        public static string joyCameraButton = "joystick button 7"; 
-
+        public static string joyCamSwitchButton = "joystick button 7";
+        public static string joyCamResetButton = "joystick button 6";
+        /// Names of Camera View joystick axis
+        public static string joyCameraLeftRight = "d-pad X";
+        public static string joyCameraFrontBack = "d-pad Y";
  
         bool IsAxisAvailable(string axisName)
         {
@@ -58,28 +63,28 @@ namespace Mocapianimation
 
     void Awake()
     {
-        if (IsAxisAvailable(joyStrafeAxis) == false)
-        {
-            Mocapianimation.OnScreen.showInfo = false;
-            showError = true;
-        }
+        //if (IsAxisAvailable(joyStrafeAxis) == false)
+        //{
+        //    Mocapianimation.OnScreen.showInfo = false;
+        //    showError = true;
+        //}
 
         
         
         //Switch between cameras
-        Mocapianimation.MocapiCameraSwitcher.joyCameraButton = joyCameraButton;
-        try
-        {
-            Input.GetButton(Mocapianimation.MocapiCameraSwitcher.joyCameraButton); //
-        }
-        catch (UnityException e)
-        {
-            throw new System.InvalidOperationException("what a crap: " + e);
-            //Debug.Log("Input Error: " + "\n" + e.ToString());
-            //Mocapianimation.OnScreen.showInfo = false;
-            //showError = true;
-            //Application.Quit();
-        }
+        Mocapianimation.MocapiCameraSwitcher.joyCamSwitchButton = joyCamResetButton;
+        //try
+        //{
+        //    Input.GetButton(Mocapianimation.MocapiCameraSwitcher.joyCamSwitchButton); //
+        //}
+        //catch (UnityException e)
+        //{
+        //    throw new System.InvalidOperationException("what a crap: " + e);
+        //    //Debug.Log("Input Error: " + "\n" + e.ToString());
+        //    //Mocapianimation.OnScreen.showInfo = false;
+        //    //showError = true;
+        //    //Application.Quit();
+        //}
     }
 
 	// Use this for initialization

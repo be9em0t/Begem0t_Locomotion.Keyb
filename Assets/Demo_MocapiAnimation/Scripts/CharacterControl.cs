@@ -86,18 +86,18 @@ namespace Mocapianimation
         /// <summary>
         /// Keyboard axis and buttons
         /// </summary>
-        public string keyMoveAxis = Mocapianimation.InputSettings.keyMoveAxis; //TODO define defaults
-        public string keyTurnAxis = Mocapianimation.InputSettings.joyTurnAxis;
-        public string keyStrafeAxis = Mocapianimation.InputSettings.keyStrafeAxis;
+        string keyMoveAxis = Mocapianimation.InputSettings.keyMoveAxis; //TODO define defaults
+        string keyTurnAxis = Mocapianimation.InputSettings.keyTurnAxis;
+        string keyStrafeAxis = Mocapianimation.InputSettings.keyStrafeAxis;
         private KeyCode keyRunButton = Mocapianimation.InputSettings.keyRunButton;
         private float keyRunMultiplier = 0f;
 
         /// <summary>
         /// Joystic axis and buttons
         /// </summary>
-        public string joyMoveAxis = Mocapianimation.InputSettings.joyMoveAxis; //"Y axis"; //inverted
-        public string joyTurnAxis = Mocapianimation.InputSettings.joyTurnAxis; //non-inverted
-        public string joyStrafeAxis = Mocapianimation.InputSettings.joyStrafeAxis; //non-inverted
+        string joyMoveAxis = Mocapianimation.InputSettings.joyMoveAxis;  //inverted
+        string joyTurnAxis = Mocapianimation.InputSettings.joyTurnAxis; //non-inverted
+        string joyStrafeAxis = Mocapianimation.InputSettings.joyStrafeAxis; //non-inverted
         string joyAlertButton = Mocapianimation.InputSettings.joyAlertButton;
         string joySitButton = Mocapianimation.InputSettings.joySitButton;
         string joyLookButton = Mocapianimation.InputSettings.joyLookButton;
@@ -287,32 +287,32 @@ namespace Mocapianimation
             /// <summary>
             /// validate parameters on start
             /// </summary>
-            switch (inputMethod)
-            {
-                case InputMethod.Keyboard:
-                    if (keyMoveAxis.Length == 0 || keyTurnAxis.Length == 0 || keyStrafeAxis.Length == 0)
-                        throw new System.ArgumentNullException("Missing keyboard axis! Please set up each axis!");
+            //switch (inputMethod)
+            //{
+            //    case InputMethod.Keyboard:
+            //        if (keyMoveAxis.Length == 0 || keyTurnAxis.Length == 0 || keyStrafeAxis.Length == 0)
+            //            throw new System.ArgumentNullException("Missing keyboard axis! Please set up each axis!");
 
-                    break;
+            //        break;
 
-                case InputMethod.Mouse:
-                    if (mouseMoveAxis.Length == 0 || mouseTurnAxis.Length == 0 || mouseStrafeAxis.Length == 0)
-                        throw new System.ArgumentNullException("Missing Mouse axis! Please set up each axis!");
+            //    case InputMethod.Mouse:
+            //        if (mouseMoveAxis.Length == 0 || mouseTurnAxis.Length == 0 || mouseStrafeAxis.Length == 0)
+            //            throw new System.ArgumentNullException("Missing Mouse axis! Please set up each axis!");
 
-                    break;
+            //        break;
 
-                case InputMethod.Joystick:
-                    if (joyMoveAxis.Length == 0 || joyTurnAxis.Length == 0 || joyStrafeAxis.Length == 0)
-                        throw new System.ArgumentNullException("Missing Joystick axis! Please set up each axis!");
+            //    case InputMethod.Joystick:
+            //        if (joyMoveAxis.Length == 0 || joyTurnAxis.Length == 0 || joyStrafeAxis.Length == 0)
+            //            throw new System.ArgumentNullException("Missing Joystick axis! Please set up each axis!");
 
-                    break;
+            //        break;
 
-                case InputMethod.All:
-                    if (keyMoveAxis.Length == 0 || keyTurnAxis.Length == 0 || keyStrafeAxis.Length == 0 || joyMoveAxis.Length == 0 || joyTurnAxis.Length == 0 || joyStrafeAxis.Length == 0)
-                        throw new System.ArgumentNullException("Missing Joystick axis! Please set up each axis!");
+            //    case InputMethod.All:
+            //        if (keyMoveAxis.Length == 0 || keyTurnAxis.Length == 0 || keyStrafeAxis.Length == 0 || joyMoveAxis.Length == 0 || joyTurnAxis.Length == 0 || joyStrafeAxis.Length == 0)
+            //            throw new System.ArgumentNullException("Missing Joystick axis! Please set up each axis!");
 
-                    break;
-            }
+            //        break;
+            //}
 
             /// <summary>
             /// Populate the Idle Animation's list. 

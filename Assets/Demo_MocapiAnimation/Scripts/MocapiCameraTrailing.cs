@@ -15,10 +15,10 @@ namespace Mocapianimation
 
         public float camZoom = 1.7f;         //camera FieldOfView
 
-        /// Name of the joystick axis
-        string joyCameraLeftRight = "6th axis";
-        string joyCameraFrontBack = "7th axis";
-
+        /// Names of Camera control axis and buttons
+        string joyCameraLeftRight = Mocapianimation.InputSettings.joyCameraLeftRight;
+        string joyCameraFrontBack = Mocapianimation.InputSettings.joyCameraFrontBack;
+        string joyCamResetButton = Mocapianimation.InputSettings.joyCamResetButton;
         void Start()
         {
 
@@ -78,7 +78,7 @@ namespace Mocapianimation
             }
 
             //Reset Camera
-            if (Input.GetKey(KeyCode.Home) || Input.GetKey(KeyCode.Keypad5) || Input.GetButtonDown("joystick button 6"))
+            if (Input.GetKey(KeyCode.Home) || Input.GetKey(KeyCode.Keypad5) || Input.GetButtonDown(joyCamResetButton))
             {
                 standardPos = CamPosBehind.transform;
                 //camZoom = 60f;

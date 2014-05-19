@@ -11,6 +11,11 @@ namespace Mocapianimation
         Vector3 cameraOffset;
         public Transform avatarTransf;
 
+        /// Names of Camera control axis and buttons
+        //string joyCameraLeftRight = Mocapianimation.InputSettings.joyCameraLeftRight;
+        //string joyCameraFrontBack = Mocapianimation.InputSettings.joyCameraFrontBack;
+        string joyCamResetButton = Mocapianimation.InputSettings.joyCamResetButton;
+
         void Start()
         {
 
@@ -59,7 +64,7 @@ namespace Mocapianimation
             }
 
             //Reset Camera
-            if (Input.GetKey(KeyCode.Home) || Input.GetKey(KeyCode.Keypad5) || Input.GetButtonDown("joystick button 6"))
+            if (Input.GetKey(KeyCode.Home) || Input.GetKey(KeyCode.Keypad5) || Input.GetButtonDown(joyCamResetButton))
             {
                 camZoom = 60f;
             }
