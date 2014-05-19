@@ -58,7 +58,11 @@ namespace Mocapianimation
         /// <summary>
         /// how much we want to smooth transition between idle animations
         /// </summary>
-        private float IdleSmooth = 3f;   
+        private float IdleSmooth = 3f;
+        /// <summary>
+        /// how much we want to smooth keyboard transition - idle animations
+        /// </summary>
+        private float keybSmooth = 5f;   
  
 		/// <summary>
 		/// Selected input method
@@ -68,11 +72,6 @@ namespace Mocapianimation
         /// current input method
         /// </summary>
         private InputMethod inputMethod = InputMethod.All; //set default
-
-        /// <summary>
-        /// axisLimit for any action on an axis
-        /// </summary>
-        //public float axisLimit = 0.2f; //Using DeadZone instead
 
         /// <summary>
         /// dead zone for any action on an axis
@@ -85,37 +84,40 @@ namespace Mocapianimation
         Vector3 stickInput;
 
         /// <summary>
-        /// Name of the keyboard axis
+        /// Keyboard axis and buttons
         /// </summary>
-        public string keyMoveAxis = "keyboard move"; //TODO define defaults
-        public string keyTurnAxis = "keyboard turn";
-        public string keyStrafeAxis = "keyboard strafe";
-        private KeyCode keyRunButton = KeyCode.LeftShift;
+        public string keyMoveAxis = Mocapianimation.InputSettings.keyMoveAxis; //TODO define defaults
+        public string keyTurnAxis = Mocapianimation.InputSettings.joyTurnAxis;
+        public string keyStrafeAxis = Mocapianimation.InputSettings.keyStrafeAxis;
+        private KeyCode keyRunButton = Mocapianimation.InputSettings.keyRunButton;
         private float keyRunMultiplier = 0f;
-        /// <summary>
-        /// how much we want to smooth transition between idle animations
-        /// </summary>
-        private float keybSmooth = 5f;   
 
         /// <summary>
-        /// name of the joystic axis 
+        /// Joystic axis and buttons
         /// </summary>
         public string joyMoveAxis = Mocapianimation.InputSettings.joyMoveAxis; //"Y axis"; //inverted
         public string joyTurnAxis = Mocapianimation.InputSettings.joyTurnAxis; //non-inverted
         public string joyStrafeAxis = Mocapianimation.InputSettings.joyStrafeAxis; //non-inverted
+        string joyAlertButton = Mocapianimation.InputSettings.joyAlertButton;
+        string joySitButton = Mocapianimation.InputSettings.joySitButton;
+        string joyLookButton = Mocapianimation.InputSettings.joyLookButton;
 
         /// <summary>
-        /// name of the mouse axis
+        /// Mouse axis (unused)
         /// </summary>
-        string mouseMoveAxis = "mouse move";
-        string mouseTurnAxis = "mouse turn";
-        string mouseStrafeAxis = "mouse strafe";  //probably not axis but (mouse) key + mouseTurnAxis
+        string mouseMoveAxis = Mocapianimation.InputSettings.mouseMoveAxis;
+        string mouseTurnAxis = Mocapianimation.InputSettings.mouseTurnAxis;
+        string mouseStrafeAxis = Mocapianimation.InputSettings.mouseStrafeAxis;  //probably not axis but (mouse) key + mouseTurnAxis
 
-        // Buttons
-        string joyAlertButton = "joystick button 3";
-        string joySitButton = "joystick button 0";
-        string joyLookButton = "joystick button 4";
+        /// <summary>
+        /// Animation controller
+        /// </summary>
+        private Animator anim;
 
+        /// <summary>
+        /// Current animation state
+        /// </summary>
+        private AnimatorStateInfo animState;
 
         /// <summary>
         /// Check if animation in any of the IDLE state
@@ -128,13 +130,11 @@ namespace Mocapianimation
 
                 if (animState.nameHash == idleBlendTree)
                 {
-                    //Debug.Log("idle test " + animState.nameHash + " : " + idleBlendTree);
                     return true;
                 }
 				return false;
         	}
         }
-
 
         /// <summary>
         /// speed of the character
@@ -149,7 +149,6 @@ namespace Mocapianimation
 
                 move = value;
 
-                //Debug.Log("Move:" + move);
             }
         }
         private float move;
@@ -167,7 +166,6 @@ namespace Mocapianimation
 
                 strafe = value;
 
-                //Debug.Log("Strafe:" + strafe);
             }
         }
 		private float strafe;
@@ -185,7 +183,6 @@ namespace Mocapianimation
 
                 direction = value;
 
-                //Debug.Log("Direction:" + direction);
             }
         }
 		private float direction;
@@ -224,7 +221,7 @@ namespace Mocapianimation
 		private bool run;
 
 		/// <summary>
-		/// sit flag to indicate sit animation
+		/// Sit flag to indicate sit animation
 		/// </summary>
 		public bool SitDown
 		{
@@ -273,17 +270,6 @@ namespace Mocapianimation
             }
         }
         private bool look;
-
-        /// <summary>
-		/// Animation controller
-		/// </summary>
-	 	private Animator anim;
-
-	 	/// <summary>
-	 	/// Current animation state
-	 	/// </summary>
-        private AnimatorStateInfo animState;
-
 
 
 		/// <summary>
@@ -335,6 +321,7 @@ namespace Mocapianimation
             idleAnimsList = new Vector2[] { idle1, idle2, idle3, idle4, idle5, idle6 }; 
         }
 	
+
 		/// <summary>
 		/// Get input and send it to the animator, which will translate it to animation
 		/// </summary>
@@ -348,18 +335,6 @@ namespace Mocapianimation
             ProcessDeadZone();
 
 			UpdateAnimator();
-
-            ////mouse test
-            //if (Input.GetAxis(mouseTurnAxis) < 0)
-            //{
-            //    //Code for action on mouse moving left
-            //    print("Mouse moved left");
-            //}
-            //if (Input.GetAxis(mouseTurnAxis) > 0)
-            //{
-            //    //Code for action on mouse moving right
-            //    print("Mouse moved right");
-            //}
 
 		}
 
@@ -433,8 +408,7 @@ namespace Mocapianimation
             }
 
 			//process basic keys
-            //Fixed in "All inputs" mode.
-            //You can enable input switching
+            //Set constantly in "All inputs" mode. Edit script to enable input switching
 			if (Input.GetKey(KeyCode.Escape))
             {
                 Debug.Log("Exit!");

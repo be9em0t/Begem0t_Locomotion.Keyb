@@ -12,16 +12,35 @@ namespace Mocapianimation
         public static bool showError;
 
         /// <summary>
-        /// name of the joystic axis 
+        /// Names of Avatar keyboard axis and buttons
+        /// </summary>
+        public static string keyMoveAxis = "keyboard move"; 
+        public static string keyTurnAxis = "keyboard turn";
+        public static string keyStrafeAxis = "keyboard strafe";
+        public static KeyCode keyRunButton = KeyCode.LeftShift;
+
+        /// <summary>
+        /// Names of Avatar joystick axis and buttons
         /// </summary>
         public static string joyMoveAxis = "Y axis"; //inverted
         public static string joyTurnAxis = "4th axis"; //non-inverted
         public static string joyStrafeAxis = "X axis";  //non-inverted
+        public static string joyAlertButton = "joystick button 3";
+        public static string joySitButton = "joystick button 0";
+        public static string joyLookButton = "joystick button 4";
 
         /// <summary>
-        /// name of the joystic axis 
+        /// Names of Avatar mouse axis
+        /// </summary>
+        public static string mouseMoveAxis = "mouse move";
+        public static string mouseTurnAxis = "mouse turn";
+        public static string mouseStrafeAxis = "mouse strafe";  //probably not axis but (mouse) key + mouseTurnAxis
+
+        /// <summary>
+        /// Names of Camera control axis and buttons
         /// </summary>
         public static string joyCameraButton = "joystick button 7"; 
+
  
         bool IsAxisAvailable(string axisName)
         {
