@@ -11,6 +11,8 @@ namespace Mocapianimation
         public static string assses;
         public static bool showError = false;
         public static bool showInfo = true;
+        public static bool showInfoImg = false;
+        public Texture2D imgJoyControls;
 
         /// <summary>
         /// Names of Avatar keyboard axis and buttons
@@ -84,11 +86,12 @@ namespace Mocapianimation
 
     void Awake()
     {
+
+        Mocapianimation.OnScreen.X360Controller = imgJoyControls;
         //Axis availability test
         foreach (var item in inputAxisArray)
         {
             axisName = item;
-            //Debug.Log(axisName + " : " + IsAxisAvailable(axisName));
             if (IsAxisAvailable(axisName) == false)
             {
                 showInfo = false;
@@ -101,16 +104,12 @@ namespace Mocapianimation
         foreach (var item in inputButtonArray)
         {
             buttonName = item;
-            //Debug.Log(buttonName + " : " + IsButtonAvailable(buttonName));
             if (IsButtonAvailable(buttonName) == false)
             {
                 showInfo = false;
                 showError = true;
             }
-
         }
-
-
     }
 
 	// Use this for initialization
@@ -136,14 +135,18 @@ namespace Mocapianimation
 
         }
 
+        // Toggle Info Image panel
+        if (showInfoImg == true)
+        {
+            Mocapianimation.OnScreen.PanelJoyInfo();
+        }
+
         // Toggle Info Error panel
         if (showError == true)
         {
             Mocapianimation.OnScreen.ErrorInfo();
         }
     }
-
-
 
 }
 }

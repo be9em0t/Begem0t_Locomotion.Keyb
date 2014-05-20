@@ -6,181 +6,136 @@ namespace Mocapianimation
     public class OnScreen : MonoBehaviour
     {
 
-        public static Color guiTextColor;
-        public static Color guiTitleColor;
-
-
-        void Update()
-        {
-
-
-
-        }
-
-        void OnGUI()
-        {
-
-
-        }
-
         public static void PanelInfo()
         {
-            guiTextColor = new Color(0.94F, 0.6F, 0.2F, .92F);
-            guiTitleColor = new Color(1F, 1F, 1F, .85F);
-
-            GUIStyle infoStyle = new GUIStyle();
-            infoStyle.fontSize = 9;
-            infoStyle.font = GUI.skin.font;
-
-            GUIStyle headerStyle = new GUIStyle();
-            headerStyle.normal.textColor = guiTitleColor;
-            headerStyle.fontSize = 13;
-            headerStyle.font = GUI.skin.font;
-
-            GUIStyle headerStyleCentered = new GUIStyle();
-            headerStyleCentered.normal.textColor = guiTitleColor;
-            headerStyleCentered.fontSize = 13;
-            headerStyleCentered.alignment = TextAnchor.UpperCenter;
-            headerStyleCentered.font = GUI.skin.font;
+            //style definitions
+            Color guiOrangeColor = new Color32(232, 138, 27, 255);   
 
             GUIStyle mainStyle = new GUIStyle();
-            mainStyle.normal.textColor = guiTextColor;
+            mainStyle.normal.textColor = Color.white;
             mainStyle.fontSize = 13;
-            mainStyle.font = GUI.skin.font;
+            mainStyle.alignment = TextAnchor.UpperLeft;
+            mainStyle.wordWrap = false;
 
             GUIStyle mainStyleCentered = new GUIStyle();
-            mainStyleCentered.normal.textColor = guiTextColor;
-            mainStyleCentered.fontSize = 13;
+            mainStyleCentered.normal.textColor = Color.white;
+            mainStyleCentered.fontSize = mainStyle.fontSize;
             mainStyleCentered.alignment = TextAnchor.UpperCenter;
-            mainStyleCentered.font = GUI.skin.font;
-
-            // Make a background box
-            GUI.Box(new Rect(5, 5, 240, 400), Mocapianimation.InputSettings.assses);
-            GUI.Label(new Rect(10, 12, 200, 120), MocapiCameraSwitcher.camActive.name, headerStyleCentered);
-            GUI.Label(new Rect(10, 30, 200, 120), "(C to change, H to hide)", mainStyleCentered);
-
-            GUI.Label(new Rect(10, 60, 200, 120), "Zoom : PgUp PgDn, +/-", mainStyle);
-            GUI.Label(new Rect(10, 80, 200, 120), "Reset Camera: Home, Gamepad 6", mainStyle);
-
-            GUI.Label(new Rect(10, 120, 200, 120), "Gamepad", headerStyle);
-            GUI.Label(new Rect(10, 140, 200, 120), "Move: Stick Y", mainStyle);
-            GUI.Label(new Rect(10, 160, 200, 120), "Sidestep: Alt + Stick X", mainStyle);
-            GUI.Label(new Rect(10, 180, 200, 120), "Look Left/Right: Ctrl + button 4", mainStyle);
-            GUI.Label(new Rect(10, 200, 200, 120), "Alert: button 3", mainStyle);
-            GUI.Label(new Rect(10, 220, 200, 120), "Sit Down: button 0", mainStyle);
-
-            GUI.Label(new Rect(10, 260, 200, 120), "Keyboard", headerStyle);
-            GUI.Label(new Rect(10, 280, 200, 120), "Move: Arrows, AWSD", mainStyle);
-            GUI.Label(new Rect(10, 300, 200, 120), "Run: LShift", mainStyle);
-            GUI.Label(new Rect(10, 320, 200, 120), "SideStep: Q or E", mainStyle);
-            GUI.Label(new Rect(10, 340, 200, 120), "Look L/R: LAlt + Arrows", mainStyle);
-            GUI.Label(new Rect(10, 360, 200, 120), "Alert: Z", mainStyle);
-            GUI.Label(new Rect(10, 380, 200, 120), "Sit Down: X", mainStyle);
-
-        }
-
-        //Format Error Info panel
-        public static void ErrorInfoOFF()
-        {
-            guiTextColor = new Color(0.94F, 0.6F, 0.2F, .92F);
-            guiTitleColor = new Color(1F, 1F, 1F, .85F);
-
-            GUIStyle infoStyle = new GUIStyle();
-            infoStyle.fontSize = 9;
-            infoStyle.font = GUI.skin.font;
+            mainStyleCentered.wordWrap = true;
 
             GUIStyle headerStyleCentered = new GUIStyle();
-            headerStyleCentered.normal.textColor = guiTitleColor;
-            headerStyleCentered.fontSize = 15;
+            headerStyleCentered.normal.textColor = guiOrangeColor;
+            headerStyleCentered.fontSize = mainStyle.fontSize + 2;
+            headerStyleCentered.fontStyle = FontStyle.Bold;
             headerStyleCentered.alignment = TextAnchor.UpperCenter;
-            headerStyleCentered.font = GUI.skin.font;
 
-            GUIStyle mainStyleCentered = new GUIStyle();
-            mainStyleCentered.normal.textColor = guiTextColor;
-            mainStyleCentered.fontSize = 13;
-            mainStyleCentered.alignment = TextAnchor.UpperCenter;
-            mainStyleCentered.font = GUI.skin.font;
+            GUIStyle headerStyleSub = new GUIStyle();
+            headerStyleSub.normal.textColor = guiOrangeColor;
+            headerStyleSub.fontSize = mainStyle.fontSize + 2;
+            headerStyleSub.fontStyle = FontStyle.Bold;
+            headerStyleSub.alignment = TextAnchor.UpperLeft;
 
-            //GUI.BeginGroup(new Rect((Screen.width - (Screen.width * .8f)) / 2, (Screen.height - (Screen.height * .5f)) / 2, Screen.width * .8f, Screen.height * .5f));
-            GUI.Box(new Rect((Screen.width - (Screen.width * .8f)) / 2, (Screen.height - (Screen.height * .5f)) / 2, Screen.width * .8f, Screen.height * .5f), "");
-            GUI.Label(new Rect(Screen.width/2, Screen.height/2, 200, 120), "Input Manager Error.", headerStyleCentered);
-            GUI.Label(new Rect(10, 30, 200, 120), "Please replace \n ProjectSettings\\InputManager.asset \n with the one contained in \n Assets\\Demo_MocapiAnimation\\InputManager_Demo.zip", mainStyleCentered);
-
-            //GUI.EndGroup();
-        }
-
-        public static void ErrorInfo()
-        {
             //ui dimensions
-            int uiWidth = 420; 
-            int uiHeight = 180; 
+            int uiWidth = 220;
+            int uiHeight = Screen.height - 10;
 
-            //style definitions
-            Color guiTextColor = new Color(0.94F, 0.6F, 0.2F, .92F);
-            Color guiTitleColor = new Color(1F, 1F, 1F, .85F);
-
-            GUIStyle infoStyle = new GUIStyle();
-            infoStyle.fontSize = 9;
-            infoStyle.font = GUI.skin.font;
-
-            GUIStyle headerStyleCentered = new GUIStyle();
-            headerStyleCentered.normal.textColor = guiTitleColor;
-            headerStyleCentered.fontSize = 15;
-            headerStyleCentered.alignment = TextAnchor.UpperCenter;
-            headerStyleCentered.font = GUI.skin.font;
-            headerStyleCentered.wordWrap = true;
-
-            GUIStyle mainStyleCentered = new GUIStyle();
-            mainStyleCentered.normal.textColor = guiTextColor;
-            mainStyleCentered.fontSize = 13;
-            mainStyleCentered.alignment = TextAnchor.UpperCenter;
-            mainStyleCentered.font = GUI.skin.font;
-
-            // Group on the center of the screen
-            GUI.BeginGroup(new Rect(Screen.width / 2 - uiWidth/2, Screen.height / 2 - uiHeight/2, uiWidth, uiHeight));
+            // Group 
+            GUI.BeginGroup(new Rect(5, 5, uiWidth, uiHeight));
 
             // Box background.
-            GUI.Box(new Rect(0, 0, uiWidth, uiHeight), "Input Manager Error.");
+            GUI.Box(new Rect(0, 0, uiWidth, uiHeight), "");
 
-            // End the group we started above. This is very important to remember!
+            // Contents
+            GUI.Label(new Rect(0, 10, uiWidth, 100), MocapiCameraSwitcher.camActive.name, headerStyleCentered);
+            GUI.Label(new Rect(0, 30, uiWidth, 100), "(C to change, H to hide)", mainStyleCentered);
+
+            GUI.Label(new Rect(5, 70, uiWidth, 120), "Zoom: PgUp PgDn, +/-", mainStyle);
+            GUI.Label(new Rect(5, 90, uiWidth, 120), "Ortho Views: Dpad, Keypad Arrows", mainStyle);
+            GUI.Label(new Rect(5, 110, uiWidth, 120), "Reset Camera: Home, Keypad 5", mainStyle);
+
+            GUI.Label(new Rect(5, 140, uiWidth, 120), "Gamepad", headerStyleSub);
+            GUI.Label(new Rect(5, 160, uiWidth, 120), "Move: Stick", mainStyle);
+            GUI.Label(new Rect(5, 180, uiWidth, 120), "Sidestep: Button 2 + Stick X", mainStyle);
+            GUI.Label(new Rect(5, 200, uiWidth, 120), "Look Left/Right: Button 1 + Stick X", mainStyle);
+            GUI.Label(new Rect(5, 220, uiWidth, 120), "Alert: Button 3", mainStyle);
+            GUI.Label(new Rect(5, 240, uiWidth, 120), "Sit Down: Button 0", mainStyle);
+            GUI.Label(new Rect(5, 260, uiWidth, 120), "Stop from Run: Alt", mainStyle);
+
+            GUI.Label(new Rect(5, 290, uiWidth, 120), "Keyboard", headerStyleSub);
+            GUI.Label(new Rect(5, 310, uiWidth, 120), "Move: Arrows, AWSD", mainStyle);
+            GUI.Label(new Rect(5, 330, uiWidth, 120), "Run: Shift + Arrows", mainStyle);
+            GUI.Label(new Rect(5, 350, uiWidth, 120), "SideStep: Alt + Arrows", mainStyle);
+            GUI.Label(new Rect(5, 370, uiWidth, 120), "Look L/R: Ctrl + Arrows", mainStyle);
+            GUI.Label(new Rect(5, 390, uiWidth, 120), "Alert: Z", mainStyle);
+            GUI.Label(new Rect(5, 410, uiWidth, 120), "Sit Down: X", mainStyle);
+            GUI.Label(new Rect(5, 430, uiWidth, 120), "Stop from Run: Alt", mainStyle);
+
+            if (GUI.Button(new Rect(5, uiHeight-50, uiWidth-10, 40), "Controls Image"))
+                Mocapianimation.InputSettings.showInfoImg = !Mocapianimation.InputSettings.showInfoImg;
+
+            // End the group we started above
             GUI.EndGroup();
         }
 
-        public static Texture2D texture = new Texture2D(128, 128);
+        public static Texture2D X360Controller;
 
-        public static void ErrorInfo3()
+        //Format Joystick image panel
+        public static void PanelJoyInfo()
         {
-            //style definitions
-            Color guiTextColor = new Color(0.94F, 0.6F, 0.2F, .92F);
-            Color guiTitleColor = new Color(1F, 1F, 1F, .85F);
-            Color guiInfoBGColor = new Color(.4F, .4F, .4F, .6F);
-            Color guiErrorBGColor = new Color(1F, .4F, .4F, .6F);
+            //ui dimensions
+            int uiWidth = 768;
+            int uiHeight = 384;
 
-            GUIStyle headerStyleCentered = new GUIStyle();
-            headerStyleCentered.normal.textColor = guiTitleColor;
-            headerStyleCentered.fontSize = 15;
-            headerStyleCentered.alignment = TextAnchor.UpperCenter;
-            headerStyleCentered.font = GUI.skin.font;
-            headerStyleCentered.wordWrap = true;
+            GUIStyle boxStyle = new GUIStyle();
 
-            //GUIStyle styleBG = new GUIStyle();
-            GUIStyle styleBG = new GUIStyle(GUI.skin.box);
-            styleBG.normal.background = MakeTex(2, 2, guiErrorBGColor);
-            GUI.Box(new Rect(100, 100, 100, 100), "test", styleBG);
+            // Group 
+            GUI.BeginGroup(new Rect(Screen.width / 2 - uiWidth / 2, Screen.height / 2 - uiHeight / 2, uiWidth, uiHeight));
+
+            // Box background and contents.
+            GUI.Box(new Rect(0, 0, uiWidth, uiHeight), X360Controller, boxStyle);
+
+            if (GUI.Button(new Rect(uiWidth/2-50, uiHeight-60, 100, 40), "Close"))
+                Mocapianimation.InputSettings.showInfoImg = false;
+
+            // End the group we started above
+            GUI.EndGroup();
         }
 
-        private static Texture2D MakeTex(int width, int height, Color col) //courtesy of Benderlab
-        {
-            Color[] pix = new Color[width * height];
-            for (int i = 0; i < pix.Length; ++i)
-            {
-                pix[i] = col;
-            }
 
-            Texture2D result = new Texture2D(width, height);
-            result.SetPixels(pix);
-            result.Apply();
-            return result;
+        //Format Error Info panel
+        public static void ErrorInfo()
+        {
+            //ui dimensions
+            int uiWidth = Screen.width - Screen.width / 8; 
+            int uiHeight = 200;
+
+            //ui style definitions
+            Color guiOrangeColor = new Color32(232, 138, 27, 255);
+            
+            GUIStyle headerStyleCentered = new GUIStyle();
+            headerStyleCentered.normal.textColor = guiOrangeColor;
+            headerStyleCentered.fontSize = 22;
+            headerStyleCentered.fontStyle = FontStyle.Bold;
+            headerStyleCentered.alignment = TextAnchor.UpperCenter;
+
+            GUIStyle mainStyleCentered = new GUIStyle();
+            mainStyleCentered.normal.textColor = Color.white;
+            mainStyleCentered.fontSize = 18;
+            mainStyleCentered.alignment = TextAnchor.MiddleCenter;
+            mainStyleCentered.wordWrap = true;
+
+            // Group 
+            GUI.BeginGroup(new Rect(Screen.width / 2 - uiWidth/2, Screen.height / 2 - uiHeight/2, uiWidth, uiHeight));
+
+            // Box background.
+            GUI.Box(new Rect(0, 0, uiWidth, uiHeight), "");
+            GUI.Box(new Rect(6, 6, uiWidth-12, uiHeight-12), "");
+
+            GUI.Label(new Rect(0, 20, uiWidth, 20), "Input Manager Error.", headerStyleCentered);
+            GUI.Label(new Rect(0, 40, uiWidth, uiHeight - 40), "Please open \\Assets\\Demo_MocapiAnimation\\InputManager.zip \n and replace \\ProjectSettings\\InputManager.asset with the one from the ZIP. \n Backup your InputManager.asset if necessary.", mainStyleCentered);
+
+            // End the group we started above
+            GUI.EndGroup();
         }
     
     }
